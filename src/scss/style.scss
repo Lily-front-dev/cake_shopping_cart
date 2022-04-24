@@ -1,0 +1,19 @@
+@import "fonts";
+@import "nullstyle";
+body{
+    background-color: green;
+    span {
+        color: blue;
+    }
+    background: url('@img/item_3.png') 0 0 no-repeat;
+}
+@media (max-width: 768px) {
+    span {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    body {
+        background-color: yellow;
+    }
+}
