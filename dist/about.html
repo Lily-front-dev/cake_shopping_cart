@@ -4,12 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.min.css?_v=20220424185902">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Про нас</title>
 </head>
 <body>
-    <header>
-    <picture><source srcset="../img/item_1.webp" type="image/webp"><img src="../img/item_1.png" alt=""></picture>
+    <header class="header">
+    <div class="container">
+        <!--......HEADER NAV......-->
+        <nav class="row navbar navbar-expand-lg navbar-light d-flex">
+            <a class="navbar-brand justify-content-center" href="#">
+                <img src="img/header/logo.svg" alt="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Переключатель навигации">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item header__nav-item align-self-center">
+                        <a class="nav-link" href="#">Каталог</a>
+                    </li>
+                    <li class="nav-item header__nav-item align-self-center">
+                        <a class="nav-link" href="#">Интересно</a>
+                    </li>
+                    <li class="nav-item header__nav-item align-self-center d-lg-none d-xl-block">
+                        <a class="nav-link" href="#">Рецепты</a>
+                    </li>
+                    <li class="nav-item header__nav-item align-self-center">
+                        <a class="nav-link" href="#">Оплата и доставка</a>
+                    </li>
+                    <li class="nav-item header__nav-item align-self-center">
+                        <a class="nav-link" href="#">Отзывы</a>
+                    </li>
+                    <li class="nav-item header__nav-item align-self-center">
+                        <a class="nav-link nav-link__tel" href="#">
+                            <img class="tel__img" src="img/header/tel.svg" alt="img">
+                            + 38 (044) 855-85-35</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
 </header>
     <main></main>
     <footer></footer>
