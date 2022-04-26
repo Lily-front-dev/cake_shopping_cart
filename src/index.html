@@ -7,7 +7,7 @@
 <body>
     @@include('html/header.html', {})
     <main>
-
+        @@include('html/main-index.html', {})
 
     </main>
     @@include('html/footer.html', {})
@@ -24,6 +24,57 @@
         crossorigin="anonymous"></script>
     <!-- Additional internal script -->
     <script src="js/app.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Initialize Swiper general/gallery-->
+    <script>
+        var swiper = new Swiper('.swiper', {
+
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            }
+        });
+    </script>
+    <!-- Initialize Swiper Products-->
+    <script>
+        var swiper = new Swiper('.swiper-products', {
+
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+
+            },
+
+            breakpoints: {
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 5,
+                },
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 5,
+                },
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 30,
+                },
+                576: {
+                    slidesPerView: 1,
+                    spaceBetween: 60,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 60,
+                }
+            }
+        });
+    </script>
 
 </body>
 
