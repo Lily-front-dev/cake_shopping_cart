@@ -1,0 +1,28 @@
+
+.nav-pills .nav-link {
+   border: none;
+   background-color: transparent;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-right: 40px;
+   box-sizing: border-box;
+   font-family: 'Roboto';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 140%;
+   text-align: center;
+   color: $text-color__grey;
+   padding: 0px;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+   background-color: transparent;
+   color: $text-color__black;
+}
+.nav-link.active {
+   color: $text-color__black;
+}

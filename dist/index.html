@@ -54,28 +54,29 @@
             <div class="col-lg-5 col-xs-12">
                 <div class="header__titles">
                     <h5 class="header__subtitle">Пекарня ручной работы</h5>
-                    <h1 class="header__title title_main">Вкуснейшие тортuки</h1>
+                    <h1 class="title-main header__title">Вкуснейшие тортuки</h1>
                     <h5 class="header__subtitle">Наши тортики ручной работы приносят радость
                         и улыбки в каждый дом, при любых ситуациях!</h5>
                 </div>
-                <a class="button button__theme_header" href="#">Побаловать себя</a>
-
+                <a class="button button_theme_header" href="#">Побаловать себя</a>
             </div>
-
+            <div class="col-lg-7 col-xs-12">
+                <div class="header__img">
+                    <img src="img/header/img_cake.png" alt="img">
+                </div>
+            </div>
         </div>
     </div>
 </header>
     <main>
         <article>
    <div class="container">
-      <section class="catalog">
-         <h3 class="catalog__title section-title">Ням-нямки</h3>
-         <h5 class="catalog__subtitle section-subtitle">Наши сладости приносят радость и эмоции на весь день!
-            <br>Используем только
-            качественные
-            продукты.
+      <section class="products">
+         <h3 class="products__title section-title">Ням-нямки</h3>
+         <h5 class="products__subtitle section-subtitle">Наши сладости приносят радость и эмоции на весь день!
+            <br>Используем только качественные продукты.
          </h5>
-         <!--......PRODUCTS pills......-->
+         <!--......PRODUCT pills......-->
          <div class="row">
             <ul class="nav nav-pills col-md-12 justify-content-center align-items-center" id="myTab" role="tablist">
                <li class="nav-item" role="presentation">
@@ -102,41 +103,39 @@
          </div>
          <!--......PRODUCTS content slider......-->
          <div class="tab-content" id="myTabContent">
-            <!--......PRODUCTS Комбинированные......-->
+            <!--......PRODUCTS торты......-->
             <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="burger-tab">
                <div class="swiper-products">
                   <div class="swiper-wrapper">
 
-                     <!--......PRODUCTS Комбинированные/Slide1......-->
-                     <div class="swiper-slide">
-                        <div class="products-item">
-                           <div class="product__element">
-                              <div class="d-flex justify-content-center item-pic">
-                                 <img src="img/menu/item_1_1.png" class="img-fluid align-self-center" alt="">
-                              </div>
-                              <div class="products__info">
-                                 <h4 class="products-item__title">«Наполеон» с ягодой</h4>
-                                 <div class="products-item__info">Готовим из слоеного теста с ванильно-сливочным
-                                    заварным кремом
-                                    с мороженым пломбир и украшаем свежей ягодой.</div>
-                                 <div class="product-buy">
-                                    <div class="product__prices">
-                                       <div class="product__price">375 грн <span>/кг</span></div>
-                                       <div class="product__price-old d-none">2900 грн</div>
-                                    </div>
-                                    <div class="product__quantity"></div>
-                                    <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="002"
-                                       data-sb-product-name="Афганский Казан Комбинированный 5 л"
-                                       data-sb-product-price="245" data-sb-product-quantity="1"
-                                       data-sb-product-img="http://jess.com.ua/img/menu/2_png.png">
-                                       <img src="img/menu/buy.svg" alt="">
-                                    </button>
+                     <!--......PRODUCTS торты/Slide1......-->
+                     <div class="product swiper-slide">
+                        <div class="product__element">
+                           <div class="product__img d-flex justify-content-center">
+                              <img src="img/menu/item_1_1.png" class="img-fluid align-self-center" alt="product__img">
+                           </div>
+                           <div class="product__info">
+                              <h4 class="product__title">«Наполеон» с ягодой</h4>
+                              <div class="product__desc">Готовим из слоеного теста с ванильно-сливочным
+                                 заварным кремом
+                                 с мороженым пломбир и украшаем свежей ягодой.</div>
+                              <div class="product-buy">
+                                 <div class="product__prices">
+                                    <div class="product__price">375 грн <span>/кг</span></div>
+                                    <div class="product__price-old d-none">2900 грн</div>
                                  </div>
+                                 <div class="product__quantity"></div>
+                                 <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="002"
+                                    data-sb-product-name="Афганский Казан Комбинированный 5 л"
+                                    data-sb-product-price="245" data-sb-product-quantity="1"
+                                    data-sb-product-img="http://jess.com.ua/img/menu/2_png.png">
+                                    <img src="img/menu/buy.svg" alt="">
+                                 </button>
                               </div>
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS Комбинированные/Slide2......-->
+                     <!--......PRODUCTS торты/Slide2......-->
                      <div class="swiper-slide">
                         <div class="products-item">
                            <div class="product__element">
@@ -165,7 +164,7 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS Комбинированные/Slide3......-->
+                     <!--......PRODUCTS торты/Slide3......-->
                      <div class="swiper-slide">
                         <div class="products-item">
                            <div class="product__element">
@@ -194,7 +193,7 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS Комбинированные/Slide4......-->
+                     <!--......PRODUCTS торты/Slide4......-->
                      <div class="swiper-slide">
                         <div class="products-item">
                            <div class="product__element">
@@ -223,7 +222,7 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS Комбинированные/Slide5......-->
+                     <!--......PRODUCTS торты/Slide5......-->
                      <div class="swiper-slide">
                         <div class="products-item">
                            <div class="product__element">
@@ -252,7 +251,7 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS Комбинированные/Slide6......-->
+                     <!--......PRODUCTS торты/Slide6......-->
                      <div class="swiper-slide">
                         <div class="products-item">
                            <div class="product__element">
@@ -281,7 +280,7 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS Комбинированные/Slide7......-->
+                     <!--......PRODUCTS торты/Slide7......-->
                      <div class="swiper-slide">
                         <div class="products-item">
                            <div class="product__element">
@@ -311,7 +310,7 @@
                         </div>
                      </div>
                   </div>
-                  <!-- Add Pagination to PRODUCTS Комбинированные -->
+                  <!-- Add Pagination to PRODUCTS торты -->
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
@@ -361,44 +360,7 @@
 
     <!-- Additional internal script -->
     <script src="js/app.min.js"></script>
-    <!-- Initialize Swiper Products-->
-    <script>
-        var swiper = new Swiper('.swiper-products', {
 
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
-
-            },
-
-            breakpoints: {
-                1200: {
-                    slidesPerView: 4,
-                    spaceBetween: 5,
-                },
-                992: {
-                    slidesPerView: 3,
-                    spaceBetween: 5,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 30,
-                },
-                576: {
-                    slidesPerView: 1,
-                    spaceBetween: 60,
-                },
-                320: {
-                    slidesPerView: 1,
-                    spaceBetween: 60,
-                }
-            }
-        });
-    </script>
 
 </body>
 
