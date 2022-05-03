@@ -6,7 +6,6 @@
    flex-direction: row;
    justify-content: center;
    align-items: center;
-   margin-right: 40px;
    box-sizing: border-box;
    font-family: 'Roboto';
    font-style: normal;
@@ -15,7 +14,9 @@
    line-height: 140%;
    text-align: center;
    color: $text-color__grey;
-   padding: 0px;
+   padding: 15px;
+   border-bottom: solid 3px #EDEDED;
+   border-radius: 0;
 }
 
 .nav-pills .nav-link.active,
@@ -25,4 +26,9 @@
 }
 .nav-link.active {
    color: $text-color__black;
+   border-bottom: solid 3px #FF4413;
+}
+.nav-link.nav-link__empty {
+  color: transparent;
+  padding: 15px;
 }

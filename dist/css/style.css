@@ -880,7 +880,6 @@ button.swiper-pagination-bullet {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-right: 40px;
   box-sizing: border-box;
   font-family: "Roboto";
   font-style: normal;
@@ -889,7 +888,9 @@ button.swiper-pagination-bullet {
   line-height: 140%;
   text-align: center;
   color: #AAAAAA;
-  padding: 0px;
+  padding: 15px;
+  border-bottom: solid 3px #EDEDED;
+  border-radius: 0;
 }
 
 .nav-pills .nav-link.active,
@@ -900,6 +901,12 @@ button.swiper-pagination-bullet {
 
 .nav-link.active {
   color: #404040;
+  border-bottom: solid 3px #FF4413;
+}
+
+.nav-link.nav-link__empty {
+  color: transparent;
+  padding: 15px;
 }
 
 .product__element {
