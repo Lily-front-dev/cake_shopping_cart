@@ -34,3 +34,12 @@ var swiper = new Swiper('.swiper-products', {
       }
    }
 });
+/*Initialize Swiper general / gallery*/
+var swiper = new Swiper('.swiper', {
+
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+
+   }
+});

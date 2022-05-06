@@ -1,10 +1,10 @@
-.product__element {
+.product__element, .order-item {
    background: #FFFFFF;
    border-radius: 20px;
    box-shadow: 0px 5px 18px rgba(20, 37, 47, 0.1);
    transform-style: preserve-3d;
 }
-.product__element:after {
+.product__element:after, .order-item:after {
    content: "";
    position: absolute;
    width: 90%;
@@ -21,7 +21,8 @@
    width: 100%;
 }
 .product {
-   margin-bottom: 70px;
+   margin-bottom: 90px;
+   margin-top: 30px;
    position: relative;
 }
 .product__title {
@@ -105,4 +106,8 @@
    font-size: 16px;
    outline: none;
    margin: 0px;
+   
+   &:hover {
+      background-color: #EB2A41;
+   }
 }
