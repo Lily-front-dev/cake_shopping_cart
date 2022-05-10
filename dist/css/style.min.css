@@ -1231,18 +1231,31 @@ button.swiper-pagination-bullet {
   height: 100%;
 }
 
-.block__content_large .block-video {
-  position: relative;
+.block__content_large {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 85px;
+  margin-bottom: 55px;
 }
 
 .block_large {
-  background-color: #EB2A41;
-  height: 358px;
+  background: url("../img/recipes/recipes_bg.png");
+  background-size: cover;
+  height: auto;
+  border-radius: 20px;
+  margin: 0px;
 }
 
 .recipes-girl {
   position: absolute;
-  top: -170px;
+  bottom: 0px;
+}
+
+.block__content_center {
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .block__figure {
