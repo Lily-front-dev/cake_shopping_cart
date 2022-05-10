@@ -1181,7 +1181,7 @@ button.swiper-pagination-bullet {
   height: 100%;
   width: 100%;
 }
-.block img {
+.block__img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1228,6 +1228,32 @@ button.swiper-pagination-bullet {
 
 .block__pic {
   position: absolute;
+  height: 100%;
+}
+
+.block__content_large .block-video {
+  position: relative;
+}
+
+.block_large {
+  background-color: #EB2A41;
+  height: 358px;
+}
+
+.recipes-girl {
+  position: absolute;
+  top: -170px;
+}
+
+.block__figure {
+  position: relative;
+}
+
+.recipes__bg {
+  background-image: url("../img/recipes/recipes_bg.png");
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 358px;
 }
 
 .hover-scale {
