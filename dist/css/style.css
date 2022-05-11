@@ -131,7 +131,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Appetite";
   font-style: normal;
   font-weight: 400;
-  font-size: 73px;
+  font-size: 5.5vmax;
   line-height: 100%;
   color: #FFFFFF;
 }
@@ -1040,8 +1040,11 @@ button.swiper-pagination-bullet {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.block-video_top {
-  top: -70%;
+.block-video_static {
+  position: static;
+  top: 0;
+  left: 0%;
+  transform: none;
 }
 
 /* PLAY-BUTTON STYLE */
@@ -1154,7 +1157,7 @@ button.swiper-pagination-bullet {
   font-family: "Appetite";
   font-style: normal;
   font-weight: 400;
-  font-size: 48px;
+  font-size: 3.7vmax;
   line-height: 100%;
   text-align: center;
   color: #404040;
@@ -1169,7 +1172,7 @@ button.swiper-pagination-bullet {
   margin-bottom: 40px;
 }
 
-.btm-img {
+.mt-30 {
   margin-top: 30px;
 }
 
@@ -1180,6 +1183,16 @@ button.swiper-pagination-bullet {
 .block {
   height: 100%;
   width: 100%;
+}
+.block_large {
+  background: url("../img/recipes/recipes_bg.png");
+  background-size: cover;
+  height: auto;
+  border-radius: 20px;
+  margin: 0px;
+}
+.block__figure {
+  position: relative;
 }
 .block__img img {
   width: 100%;
@@ -1199,6 +1212,18 @@ button.swiper-pagination-bullet {
   position: absolute;
   bottom: 35px;
   left: 40px;
+}
+.block__content_large {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 85px;
+  margin-bottom: 55px;
+}
+.block__content_center {
+  bottom: 15px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .block__title {
   font-family: "Roboto";
@@ -1231,35 +1256,9 @@ button.swiper-pagination-bullet {
   height: 100%;
 }
 
-.block__content_large {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 85px;
-  margin-bottom: 55px;
-}
-
-.block_large {
-  background: url("../img/recipes/recipes_bg.png");
-  background-size: cover;
-  height: auto;
-  border-radius: 20px;
-  margin: 0px;
-}
-
 .recipes-girl {
   position: absolute;
   bottom: 0px;
-}
-
-.block__content_center {
-  bottom: 15px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.block__figure {
-  position: relative;
 }
 
 .recipes__bg {

@@ -16,7 +16,7 @@
     font-family: 'Appetite';
     font-style: normal;
     font-weight: 400;
-    font-size: 48px;
+    font-size: 3.7vmax;
     line-height: 100%;
     text-align: center;
     color: $text-color__black;
@@ -29,7 +29,7 @@
     margin-bottom: 40px;
 }
 
-.btm-img {
+.mt-30 {
     margin-top: 30px;
 }
 
@@ -39,6 +39,18 @@
 .block {
     height: 100%;
     width: 100%;
+
+    &_large {
+        background: url('@img/recipes/recipes_bg.png');
+        background-size: cover;
+        height: auto;
+        border-radius: 20px;
+        margin: 0px;
+    }
+
+    &__figure {
+            position: relative;
+        }
     
     &__img img {
         width: 100%;
@@ -58,6 +70,19 @@
         position: absolute;
         bottom: 35px;
         left: 40px;
+
+        &_large {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                margin-top: 85px;
+                margin-bottom: 55px;
+            }
+        &_center {
+            bottom: 15px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
     
     &__title {
@@ -92,34 +117,12 @@
     height: 100%;
 
 }
-.block__content_large {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin-top: 85px;
-    margin-bottom: 55px;
-}
 
-.block_large {
-    background: url('@img/recipes/recipes_bg.png');
-    background-size: cover;
-    height: auto; 
-    border-radius: 20px;
-    margin: 0px;
-}
 .recipes-girl {
     position: absolute;
     bottom: 0px;
 }
-.block__content_center { 
-    bottom: 15px;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.block__figure {
-    position: relative;
-}
 .recipes__bg {
     background-image: url('@img/recipes/recipes_bg.png');
     background-repeat: no-repeat;
