@@ -9,6 +9,9 @@
    line-height: 140%;
    text-align: center;
    color: #FFFFFF;
+   @media (max-width: 992px) {
+      font-size: 14px;
+   }
 }
 
 .navbar-light .navbar-nav .nav-link.nav-link__tel {
