@@ -43,3 +43,35 @@ var swiper = new Swiper('.swiper', {
 
    }
 });
+var swiper = new Swiper('.swiper-reviews', {
+
+   pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+      renderBullet: function (index, className) {
+         return '<span class="' + className + '">' + (index + 1) + '</span>';
+      },
+   },
+   breakpoints: {
+      1200: {
+         slidesPerView: 2,
+         spaceBetween: 5,
+      },
+      992: {
+         slidesPerView: 2,
+         spaceBetween: 5,
+      },
+      768: {
+         slidesPerView: 2,
+         spaceBetween: 30,
+      },
+      576: {
+         slidesPerView: 1,
+         spaceBetween: 60,
+      },
+      320: {
+         slidesPerView: 1,
+         spaceBetween: 60,
+      }
+   }
+});

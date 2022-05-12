@@ -19,8 +19,8 @@
     <div class="container">
         <!--......HEADER NAV......-->
         <nav class="row navbar navbar-expand-lg navbar-light d-flex">
-            <a class="navbar-brand justify-content-center" href="#">
-                <img src="img/header/logo.svg" alt="logo">
+            <a class="navbar-brand mx-auto d-block" href="#">
+                <img src="img/header/logo.svg" class="" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
                 aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Переключатель навигации">
@@ -54,9 +54,9 @@
         <div class="row">
             <div class="col-lg-5 col-xs-12">
                 <div class="header__titles">
-                    <h5 class="header__subtitle">Пекарня ручной работы</h5>
+                    <h5 class="header__subtitle text-md-left">Пекарня ручной работы</h5>
                     <h1 class="title-main header__title">Вкуснейшие тортuки</h1>
-                    <h5 class="header__subtitle">Наши тортики ручной работы приносят радость
+                    <h5 class="header__subtitle text-md-left">Наши тортики ручной работы приносят радость
                         и улыбки в каждый дом, при любых ситуациях!</h5>
                 </div>
                 <a class="button button_theme_header" href="#">Побаловать себя</a>
@@ -683,7 +683,94 @@
             </div>
          </div>
       </section>
-   </div>
+      <!--......REVIEWS......-->
+      <section class="reviews" id="reviews">
+         <div class="reviews__title section-title">Отзывы сладкоежек</div>
+         <div class="reviews__subtitle section-subtitle">Как наши клиенты хвалят нашу работу и мы становимся
+            только лучше и довольнее после этих отзывов</div>
+         <!-- REVIEWS Swiper -->
+         <div class="swiper-reviews">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="d-flex align-items-stretch">
+                     <div class="review order-item">
+                        <div class="quote">
+                           <img src="img/reviews/quotes.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="review__creator">Юлия, г. Киев</div>
+                        <div class="review__title">Очень вкусно! Не слиплось)</div>
+                        <div class="review__text">вот и наступил момент, когда я напишу отзыв. Неделю выбирал себе
+                           генератор на загородную стройку. Купил Matari MX7000E. Уже с месяц молотит, без нареканий,
+                           хоть
+                           и эта модель как генератор для дома.
+                           Да, и это только начало. Есть еще перспектива купить что-то помощнее для компании и еще
+                           какой-то
+                           водяной текст
+                           ну так сказать, чтобы был. Советую!</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="d-flex align-items-stretch">
+                     <div class="review order-item">
+                        <div class="quote">
+                           <img src="img/reviews/quotes.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="review__creator">Владимир Бойко, Шулявка</div>
+                        <div class="review__title">Мега стильный тортик получили!</div>
+                        <div class="review__text">вот и наступил момент, когда я напишу отзыв. Неделю выбирал себе
+                           генератор на загородную стройку. Купил Matari MX7000E. Уже с месяц молотит, без нареканий,
+                           хоть
+                           и эта модель как генератор для дома.
+                           Да, и это только начало. Есть еще перспектива купить что-то помощнее для компании и еще
+                           какой-то
+                           водяной текст
+                           ну так сказать, чтобы был. Советую!</div>
+
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="d-flex align-items-stretch">
+                     <div class="review">
+                        <div class="quote">
+                           <img src="img/reviews/quotes.svg" class="img-fluid" alt="">
+                           header__img
+                        </div>
+                        <div class="review__creator">Ольга, г. Одесса</div>
+                        <div class="review__title">Отличный казан купила!</div>
+                        <div class="review__text">Оригинальный дизайн и форма, качественное исполнение, удобная винтовая
+                           ручка, не очень большой вес,функционально, позволяет сократить время приготовления пищи,
+                           оптимальный объем, наличие клапанов для безопасности, можно брать в походы на природу.
+                           Рекомендую!</div>
+                        <div class="riview__date">31 декабря 2020</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide">
+                  <div class="d-flex align-items-stretch">
+                     <div class="review">
+                        <div class="quote">
+                           <img src="img/reviews/quotes.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="review__creator">Владимир Бойко, г Киев</div>
+                        <div class="review__title">Получается очень вкусно!</div>
+                        <div class="review__text">Казан отличный! Есть такой у друга, так он его всегда на рыбалку
+                           берет,
+                           уха получается ооочень вкусная. Вещь в хозяйстве нужная. Можно что угодно приготовить и очень
+                           быстро. Теперь вот и я буду тестировать. Но уже по упаковке и внешнему виду видно что вещь
+                           качественная. Продавец по моему запросу показал все документы.</div>
+                        <div class="riview__date">18 апреля 2020</div>
+                     </div>
+                  </div>
+               </div>
+
+
+            </div>
+            <!-- Add Pagination to reviews -->
+            <div class="swiper-pagination" id="swiper-pg"></div>
+         </div>
+      </section>
 </article>
 
     </main>

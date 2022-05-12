@@ -122,6 +122,11 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(281.66deg, #090522 -9.81%, #C9081F 93.47%), #FFB800;
   padding: 30px 0px 100px 0px;
 }
+@media (max-width: 768px) {
+  .header {
+    padding: 30px 0px 30px 0px;
+  }
+}
 .header__nav-item {
   margin-left: 2vw;
 }
@@ -132,16 +137,19 @@ h1, h2, h3, h4, h5, h6 {
 .header__titles {
   padding: 75px 0px 85px 0px;
 }
-.header__subtitle {
-  text-align: left;
-}
 .header__title {
   font-family: "Appetite";
   font-style: normal;
   font-weight: 400;
-  font-size: 5.5vmax;
+  font-size: 73px;
   line-height: 100%;
   color: #FFFFFF;
+}
+@media (max-width: 768px) {
+  .header__title {
+    font-size: 52px;
+    text-align: center;
+  }
 }
 .header__img img {
   width: 50vw;
@@ -165,6 +173,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .button_theme_header {
   padding: 25px 60px;
+}
+@media (max-width: 992px) {
+  .button_theme_header {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    max-width: 250px;
+  }
 }
 
 /**
@@ -1166,15 +1182,25 @@ button.swiper-pagination-bullet {
 .products {
   padding: 60px 0px 60px 0px;
 }
+@media (max-width: 768px) {
+  .products {
+    padding: 30px 0px 30px 0px;
+  }
+}
 
 .section-title {
   font-family: "Appetite";
   font-style: normal;
   font-weight: 400;
-  font-size: 3.7vmax;
+  font-size: 48px;
   line-height: 100%;
   text-align: center;
   color: #404040;
+}
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
 }
 
 .section-subtitle {
@@ -1370,4 +1396,20 @@ button.swiper-pagination-bullet {
   -webkit-box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 13px 0 rgba(0, 0, 0, 0.2);
   border-radius: 50%;
+}
+
+.quote {
+  position: absolute;
+  left: 76.67%;
+  right: 5.56%;
+  top: -8%;
+}
+
+.review__title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 140%;
+  color: #404040;
 }

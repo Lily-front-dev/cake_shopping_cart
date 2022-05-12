@@ -11,15 +11,21 @@
 
 .products {
     padding: 60px 0px 60px 0px;
+    @media (max-width: 768px) {
+            padding: 30px 0px 30px 0px;
+        }
 }
 .section-title {
     font-family: 'Appetite';
     font-style: normal;
     font-weight: 400;
-    font-size: 3.7vmax;
+    font-size: 48px;
     line-height: 100%;
     text-align: center;
     color: $text-color__black;
+    @media (max-width: 768px) {
+        font-size: 36px;
+    }
 }
 .section-subtitle {
     color: $text-color__grey;
@@ -219,4 +225,18 @@
     -webkit-box-shadow: 0 5px 13px 0 rgb(0 0 0 / 20%);
     box-shadow: 0 5px 13px 0 rgb(0 0 0 / 20%);
     border-radius: 50%;
+}
+.quote {
+    position: absolute;
+    left: 76.67%;
+    right: 5.56%;
+    top: -8%;
+}
+.review__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 140%;
+    color: $text-color__black;
 }
