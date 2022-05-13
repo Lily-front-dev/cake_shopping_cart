@@ -934,14 +934,14 @@ button.swiper-pagination-bullet {
   padding: 15px;
 }
 
-.product__element, .order-item {
+.box-shadow {
   background: #FFFFFF;
   border-radius: 20px;
   box-shadow: 0px 5px 18px rgba(20, 37, 47, 0.1);
   transform-style: preserve-3d;
 }
 
-.product__element:after, .order-item:after {
+.box-shadow:after {
   content: "";
   position: absolute;
   width: 90%;
@@ -1402,7 +1402,7 @@ button.swiper-pagination-bullet {
   position: absolute;
   left: 76.67%;
   right: 5.56%;
-  top: -8%;
+  top: -22%;
 }
 
 .review__title {
@@ -1412,4 +1412,21 @@ button.swiper-pagination-bullet {
   font-size: 28px;
   line-height: 140%;
   color: #404040;
+}
+
+.review {
+  padding: 20px 30px 40px 20px;
+}
+
+.reviews {
+  padding-top: 170px;
+}
+
+.reviews__subtitle {
+  margin-top: 10px;
+}
+
+.swiper-reviews {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }

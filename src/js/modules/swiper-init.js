@@ -34,23 +34,17 @@ var swiper = new Swiper('.swiper-products', {
       }
    }
 });
-/*Initialize Swiper general / gallery*/
-var swiper = new Swiper('.swiper', {
 
-   pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-
-   }
-});
 var swiper = new Swiper('.swiper-reviews', {
 
    pagination: {
+      navigation: {
+         nextEl: ".swiper-button-next",
+         prevEl: ".swiper-button-prev",
+      },
+
       el: '.swiper-pagination',
       clickable: true,
-      renderBullet: function (index, className) {
-         return '<span class="' + className + '">' + (index + 1) + '</span>';
-      },
    },
    breakpoints: {
       1200: {

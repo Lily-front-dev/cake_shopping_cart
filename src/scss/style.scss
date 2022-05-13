@@ -5,6 +5,7 @@
 @import "header/header-block.scss";
 @import "swiper-bundle";
 @import "nav-pills";
+@import "box-shadow";
 @import "product-card";
 @import "play-btn";
 @import "gradient";
@@ -230,7 +231,7 @@
     position: absolute;
     left: 76.67%;
     right: 5.56%;
-    top: -8%;
+    top: -22%;
 }
 .review__title {
     font-family: 'Roboto';
@@ -239,4 +240,17 @@
     font-size: 28px;
     line-height: 140%;
     color: $text-color__black;
+}
+.review {
+    padding: 20px 30px 40px 20px;
+}
+.reviews {
+    padding-top: 170px; 
+}
+.reviews__subtitle {
+    margin-top: 10px;
+}
+.swiper-reviews {
+    padding-top: 100px; 
+    padding-bottom: 50px;
 }
