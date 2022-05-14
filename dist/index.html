@@ -9,6 +9,10 @@
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <!-- Fancy box gallery -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <!-- Map -->
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
+    <!-- Fonts -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.min.css">
     <title>Главная</title>
@@ -19,7 +23,7 @@
     <div class="container">
         <!--......HEADER NAV......-->
         <nav class="row navbar navbar-expand-lg navbar-light d-flex">
-            <a class="navbar-brand mx-auto d-block" href="#">
+            <a class="navbar-brand" href="#">
                 <img src="img/header/logo.svg" class="" alt="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
@@ -54,9 +58,9 @@
         <div class="row">
             <div class="col-lg-5 col-xs-12">
                 <div class="header__titles">
-                    <h5 class="header__subtitle text-md-left">Пекарня ручной работы</h5>
+                    <h5 class="header__subtitle text-lg-left">Пекарня ручной работы</h5>
                     <h1 class="title-main header__title">Вкуснейшие тортuки</h1>
-                    <h5 class="header__subtitle text-md-left">Наши тортики ручной работы приносят радость
+                    <h5 class="header__subtitle text-lg-left">Наши тортики ручной работы приносят радость
                         и улыбки в каждый дом, при любых ситуациях!</h5>
                 </div>
                 <a class="button button_theme_header" href="#">Побаловать себя</a>
@@ -587,7 +591,7 @@
                      <img src="img/info/info_1.png" class="order-item__img1 img-fluid align-self-center " alt="">
                   </div>
                   <h4 class="order-item__title">Заказ на сайте</h4>
-                  <div class="order-item__info">Оформите заказ на сайте или позвоните нам</div>
+                  <div class="order-item__info box-text">Оформите заказ на сайте или позвоните нам</div>
                </div>
             </div>
             <div class="col-6 col-lg-3 mt-30">
@@ -597,7 +601,7 @@
                      <img src="img/info/info_2.png" class="img-fluid align-self-center order-item__img2" alt="">
                   </div>
                   <h4 class="order-item__title">Оплата</h4>
-                  <div class="order-item__info">Оплатите онлайн через сайт или курьеру наличными</div>
+                  <div class="order-item__info box-text">Оплатите онлайн через сайт или курьеру наличными</div>
                </div>
             </div>
             <div class="col-6 col-lg-3 mt-30">
@@ -607,7 +611,7 @@
                      <img src="img/info/info_3.png" class="align-self-center order-item__img2" alt="">
                   </div>
                   <h4 class="order-item__title">Доставка</h4>
-                  <div class="order-item__info">Вжуу-уух и мы уже у вас под подьездом</div>
+                  <div class="order-item__info box-text">Вжуу-уух и мы уже у вас под подьездом</div>
                </div>
             </div>
             <div class="col-6 col-lg-3 mt-30">
@@ -617,7 +621,7 @@
                      <img src="img/info/info_4.png" class="img-fluid align-self-center order-item__img1" alt="">
                   </div>
                   <h4 class="order-item__title">Приятного</h4>
-                  <div class="order-item__info">А вот и не слипнется!Мы проверяли ;)</div>
+                  <div class="order-item__info box-text">А вот и не слипнется!Мы проверяли ;)</div>
                </div>
             </div>
 
@@ -702,10 +706,10 @@
                         <div class="quote">
                            <img src="img/reviews/quotes.svg" class="img-fluid" alt="">
                         </div>
-                        <div class="review__creator order-item__info text-left">Юлия, г. Киев</div>
+                        <div class="review__creator box-text">Юлия, г. Киев</div>
                         <div class="review__title mt-3">Очень вкусно! Не слиплось)</div>
 
-                        <div class="review__text order-item__info text-left">вот и наступил момент, когда я напишу
+                        <div class="review__text box-text">вот и наступил момент, когда я напишу
                            отзыв. Неделю выбирал себе
                            генератор на загородную стройку. Купил Matari MX7000E. Уже с месяц молотит, без нареканий,
                            хоть
@@ -723,9 +727,9 @@
                         <div class="quote">
                            <img src="img/reviews/quotes.svg" class="img-fluid" alt="">
                         </div>
-                        <div class="review__creator order-item__info text-left">Владимир Бойко, Шулявка</div>
+                        <div class="review__creator box-text">Владимир Бойко, Шулявка</div>
                         <div class="review__title mt-3">Мега стильный тортик получили!</div>
-                        <div class="review__text order-item__info text-left">вот и наступил момент, когда я напишу
+                        <div class="review__text box-text">вот и наступил момент, когда я напишу
                            отзыв. Неделю выбирал себе
                            генератор на загородную стройку. Купил Matari MX7000E. Уже с месяц молотит, без нареканий,
                            хоть
@@ -744,9 +748,9 @@
                         <div class="quote">
                            <img src="img/reviews/quotes.svg" class="img-fluid" alt="">
                         </div>
-                        <div class="review__creator order-item__info text-left">Ольга, г. Одесса</div>
+                        <div class="review__creator box-text">Ольга, г. Одесса</div>
                         <div class="review__title mt-3">Отличный казан купила!</div>
-                        <div class="review__text order-item__info text-left">Оригинальный дизайн и форма, качественное
+                        <div class="review__text box-text">Оригинальный дизайн и форма, качественное
                            исполнение, удобная винтовая
                            ручка, не очень большой вес,функционально, позволяет сократить время приготовления пищи,
                            оптимальный объем, наличие клапанов для безопасности, можно брать в походы на природу.
@@ -761,9 +765,9 @@
                         <div class="quote">
                            <img src="img/reviews/quotes.svg" class="img-fluid" alt="">
                         </div>
-                        <div class="review__creator order-item__info text-left">Владимир Бойко, г Киев</div>
+                        <div class="review__creator box-text">Владимир Бойко, г Киев</div>
                         <div class="review__title mt-3">Получается очень вкусно!</div>
-                        <div class="review__text order-item__info text-left">Казан отличный! Есть такой у друга, так он
+                        <div class="review__text box-text">Казан отличный! Есть такой у друга, так он
                            его всегда
                            на рыбалку
                            берет,
@@ -781,10 +785,88 @@
             <div class="swiper-pagination" id="swiper-pg"></div>
          </div>
       </section>
+      <!--......MAP......-->
+      <section class="map">
+         <div id='map'>
+            <img src="img/preparation/paper_1.svg" class="img-fluid paper-certificate-map" alt="">
+            <div class="contacts box-shadow">
+               <div class="contacts__title mb-3">Контакты</div>
+               <div class="contacts__tel">
+                  <img src="img/map/tel.svg" alt="img">+ 38 (044) 855-85-35
+               </div>
+               <div class="contacts__tel">
+                  <img src="img/map/tel.svg" alt="img">+ 38 (044) 855-85-35
+               </div>
+               <div class="contacts__tel">
+                  <img src="img/map/tel.svg" alt="img">+ 38 (044) 855-85-35
+               </div>
+               <div class="contacts__text">Звоните нам с понедельника до понедельника с 09:00 до 20:00</div>
+               <div class="contacts__address mt-4">
+                  <img src="img/map/loc.svg" alt="img">г. Киев, ул. Щедрина, 28
+               </div>
+               <div class="contacts__text">Будем рады видеть Вас у нас нас в магазине</div>
+               <div class="contacts__address mt-4">
+                  <img src="img/map/let.svg" class="pt-2" alt="img">info@afgankazan.kiev.ua
+               </div>
+            </div>
+         </div>
+      </section>
 </article>
 
     </main>
-    <footer></footer>
+    <footer class="footer">
+   <div class="container">
+      <!--......FOOTER NAV......-->
+      <nav class="row navbar footer-navbar navbar-expand-lg navbar-light d-flex">
+         <a class="navbar-brand mx-auto d-block" href="#">
+            <img src="img/header/logo.svg" class="" alt="logo">
+         </a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+               <li class="nav-item header__nav-item align-self-center">
+                  <a class="nav-link" href="#">Каталог</a>
+               </li>
+               <li class="nav-item header__nav-item align-self-center">
+                  <a class="nav-link" href="#">Интересно</a>
+               </li>
+               <li class="nav-item header__nav-item align-self-center d-lg-none d-xl-block">
+                  <a class="nav-link" href="#">Рецепты</a>
+               </li>
+               <li class="nav-item header__nav-item align-self-center">
+                  <a class="nav-link" href="#">Оплата и доставка</a>
+               </li>
+               <li class="nav-item header__nav-item align-self-center">
+                  <a class="nav-link" href="#">Отзывы</a>
+               </li>
+               <li class="nav-item header__nav-item social-icon align-self-center">
+                  <a href="#" target="_blank">
+                     <i class="fa fa-facebook" aria-hidden="true"></i>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" target="_blank">
+                     <i class="fa fa-vk" aria-hidden="true"></i>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" target="_blank">
+                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                  </a>
+               </li>
+               <li class="nav-item">
+                  <a href="#" target="_blank">
+                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </nav>
+   </div>
+</footer>
     <!--......SCRIPTS......-->
     <!-- Separate JS for Popper and Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
@@ -798,6 +880,8 @@
         crossorigin="anonymous"></script>
     <!-- Fancy box gallery -->
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!-- Map -->
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js'></script>
 
     <!-- Additional internal script -->
     <script src="js/app.min.js"></script>

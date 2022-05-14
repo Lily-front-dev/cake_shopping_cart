@@ -201,11 +201,7 @@
         color: $text-color__black;
     }
     &__info {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 140%;
         text-align: center;
-        color: $text-color__grey;
     }
     &__img1 {
         margin-top: -50px;
@@ -231,7 +227,7 @@
     position: absolute;
     left: 76.67%;
     right: 5.56%;
-    top: -22%;
+    top: -18%;
 }
 .review__title {
     font-family: 'Roboto';
@@ -253,4 +249,101 @@
 .swiper-reviews {
     padding-top: 100px; 
     padding-bottom: 50px;
+}
+.box-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: $text-color__grey;
+}
+
+#map {
+    position: relative;
+    height: 570px;
+    width: 100%;
+    border-radius: 20px;
+}
+
+#marker {
+    background-image: url('@img/map/marker.svg');
+    background-size: cover;
+    width: 50px;
+    height: 66px;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.mapboxgl-popup {
+    max-width: 200px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contacts {
+    background: #FFFFFF;;
+    box-shadow: 0px 5px 30px rgba(20, 37, 47, 0.1);
+    border-radius: 10px;
+    height: auto;
+    width: 350px;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    padding: 25px 35px 40px 35px;
+    @media (max-width: 768px) {
+        top: 50%;
+        left: 50%;
+    }
+}
+
+.contacts__title {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 140%;
+}
+
+.contacts__tel {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 140%;
+}
+
+.contacts img {
+    margin-right: 7px;
+    padding-top: 4px;
+}
+.contacts__address {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+}
+.footer {
+    background: linear-gradient(302.5deg, #090522 19.39%, #C9081F 80.25%), #430621;
+    height: 600px;
+    margin-top: -400px;
+    
+    
+}
+.footer-navbar {
+    padding-top: 480px;
+}
+.fa {
+    font-size: 28px !important;
+    text-decoration: none;
+    list-style-type: none;
+    margin-right: 20px;
+    color: white;
+    line-height: 140%;
+
+}
+.social-icon {
+    margin-left: 6.67vw;
 }
