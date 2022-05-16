@@ -120,11 +120,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   background: linear-gradient(281.66deg, #090522 -9.81%, #C9081F 93.47%), #FFB800;
-  padding: 30px 0px 100px 0px;
+  max-width: 1920px;
+  margin: auto;
+  padding: 30px 0px 0px 0px;
 }
 @media (max-width: 768px) {
   .header {
-    padding: 30px 0px 30px 0px;
+    padding: 30px 0px 0px 0px;
   }
 }
 .header__nav-item {
@@ -152,7 +154,10 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .header__img img {
-  width: 50vw;
+  width: 52vw;
+  margin-top: 2vw;
+  position: relative;
+  z-index: 557;
 }
 @media (max-width: 992px) {
   .header__img img {
@@ -181,6 +186,68 @@ h1, h2, h3, h4, h5, h6 {
     margin: auto;
     max-width: 250px;
   }
+}
+
+.paper-header-products {
+  margin-top: -25vw;
+  z-index: 556;
+  position: relative;
+}
+@media (max-width: 1380px) {
+  .paper-header-products {
+    margin-top: -8vw;
+  }
+}
+
+.strawberry-img {
+  position: absolute;
+  top: 20%;
+  left: -3%;
+}
+@media (max-width: 1500px) {
+  .strawberry-img {
+    display: none;
+  }
+}
+
+.leaf-img {
+  position: absolute;
+  top: 22%;
+  left: 75%;
+}
+@media (max-width: 1500px) {
+  .leaf-img {
+    display: none;
+  }
+}
+
+.leaf1-img {
+  position: absolute;
+  top: 68%;
+  left: 70%;
+  z-index: 777;
+}
+@media (max-width: 1500px) {
+  .leaf1-img {
+    display: none;
+  }
+}
+
+.leaf2-img {
+  position: absolute;
+  top: 65%;
+  left: 42%;
+}
+@media (max-width: 1500px) {
+  .leaf2-img {
+    display: none;
+  }
+}
+
+.container-wide-header {
+  background-color: transparent;
+  max-width: 1920px;
+  margin: auto;
 }
 
 /**
@@ -1179,12 +1246,15 @@ button.swiper-pagination-bullet {
   border-radius: 20px;
 }
 
+/*@import "smartbasket";
+@import "smartbasket-style";
+@import "smartbasket-all";*/
 .products {
-  padding: 60px 0px 60px 0px;
+  padding: 0px 0px 60px 0px;
 }
 @media (max-width: 768px) {
   .products {
-    padding: 30px 0px 30px 0px;
+    padding: 0px 0px 30px 0px;
   }
 }
 
@@ -1439,6 +1509,7 @@ button.swiper-pagination-bullet {
   height: 570px;
   width: 100%;
   border-radius: 20px;
+  margin-top: 150px;
 }
 
 #marker {
@@ -1508,6 +1579,8 @@ button.swiper-pagination-bullet {
 
 .footer {
   background: linear-gradient(302.5deg, #090522 19.39%, #C9081F 80.25%), #430621;
+  max-width: 1920px;
+  margin: auto;
   height: 600px;
   margin-top: -400px;
 }
@@ -1520,11 +1593,19 @@ button.swiper-pagination-bullet {
   font-size: 28px !important;
   text-decoration: none;
   list-style-type: none;
-  margin-right: 20px;
+  margin-left: 40px;
   color: white;
   line-height: 140%;
 }
 
 .social-icon {
-  margin-left: 6.67vw;
+  margin-left: 4vw;
+}
+
+.footer__nav-item {
+  margin-left: 2.5vw;
+}
+.footer__nav-item:last-child {
+  margin-left: 5vw;
+  margin-right: 4vw;
 }
