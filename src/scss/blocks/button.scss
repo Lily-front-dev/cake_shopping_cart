@@ -1,0 +1,16 @@
+.button {
+   background: linear-gradient(0deg, #EB2A41, #EB2A41),
+      #FF4413;
+   border-radius: 120px;
+}
+
+.button_theme_header {
+   padding: 25px 60px;
+
+   @media (max-width: 992px) {
+      display: flex;
+      justify-content: center;
+      margin: auto;
+      max-width: 250px;
+   }
+}

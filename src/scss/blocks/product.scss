@@ -1,0 +1,95 @@
+.product {
+   margin-bottom: 90px;
+   margin-top: 30px;
+   position: relative;
+   &__title {
+         font-family: 'Roboto';
+         font-style: normal;
+         font-weight: 500;
+         font-size: 16px;
+         line-height: 140%;
+         color: #404040;
+      }
+   &__desc {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: 140%;
+      color: #AAAAAA;
+   }
+   &__info {
+      padding: 20px;
+   }
+   &__buy {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+   }
+   &__price {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 140%;
+      color: #404040;
+   
+      span {
+         font-size: 10px;
+         color: #EDEDED;
+      }
+   }
+   &__price-old {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 140%;
+      text-decoration-line: line-through;
+      color: #AAAAAA;
+   }
+   &__quantity {
+      border: 1px solid #FFF;
+      box-sizing: border-box;
+      border-radius: 56px;
+      width: 84px;
+      height: 31px;
+      margin-left: 5px;
+      margin-right: 5px;
+      background: #F4F4F4;
+   }
+   &__add-to-cart-button {
+      width: 36px;
+      height: 36px;
+      left: 292px;
+      top: 380px;
+      background: rgba(235, 42, 65, 0.2);
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border-radius: 50%;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border: none;
+      -webkit-appearance: none;
+      color: #fff;
+      cursor: pointer;
+      -webkit-transition: .3s;
+      transition: .3s;
+      font-size: 16px;
+      outline: none;
+      margin: 0px;
+   
+      &:hover {
+         background-color: #EB2A41;
+      }
+   }
+   &__img img {
+      width: 100%;
+   }
+}
