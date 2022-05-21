@@ -1,0 +1,17 @@
+.footer {
+   background: linear-gradient(302.5deg, #090522 19.39%, #C9081F 80.25%), #430621;
+   max-width: 1920px;
+   margin: auto;
+   height: 600px;
+   margin-top: -400px;
+
+   &__nav-item {
+      margin-left: 2.5vw;
+
+      &:last-child {
+         margin-left: 5vw;
+         margin-right: 4vw;
+      }
+   }
+
+}

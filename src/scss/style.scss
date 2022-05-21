@@ -3,8 +3,8 @@
 @import "variables";
 @import "blocks/header.scss";
 @import "blocks/button.scss";
+@import "blocks/contacts.scss";
 @import "libs/header-nav.scss";
-@import "blocks/header/header-block.scss";
 @import "blocks/block.scss";
 @import "blocks/order-item.scss";
 @import "libs/swiper-bundle";
@@ -15,17 +15,13 @@
 @import "mixins/gradient";
 @import "mixins/hover-scale";
 @import "libs/smartbasket";
+@import "blocks/footer.scss";
 
-.title-main {
+.main-title {
     margin-top: 25px;
     margin-bottom: 25px;
 }
-.products {
-    padding: 0px 0px 60px 0px;
-    @media (max-width: 768px) {
-            padding: 0px 0px 30px 0px;
-        }
-}
+
 .section-title {
     font-family: 'Appetite';
     font-style: normal;
@@ -38,8 +34,38 @@
         font-size: 36px;
     }
 }
+
+ .main-text {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+
+    @media (max-width: 992px) {
+        font-size: 14px;
+    }
+
+}
+
 .section-subtitle {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
     color: $text-color__grey;
+}
+
+.products {
+    padding: 0px 0px 60px 0px;
+
+    @media (max-width: 768px) {
+        padding: 0px 0px 30px 0px;
+    }
 }
 .products__subtitle, .about-us__subtitle {
     margin-top: 10px;
@@ -148,71 +174,9 @@
     padding: 10px;
 }
 
-.contacts {
-    background: #FFFFFF;;
-    box-shadow: 0px 5px 30px rgba(20, 37, 47, 0.1);
-    border-radius: 10px;
-    height: auto;
-    width: 350px;
-    top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    position: absolute;
-    z-index: 1;
-    padding: 25px 35px 40px 35px;
-    @media (max-width: 768px) {
-        top: 50%;
-        left: 50%;
-    }
 
-    & img {
-        margin-right: 7px;
-        padding-top: 4px;
-    }
 
-    &__title {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 28px;
-        line-height: 140%;
-    }
 
-    &__tel {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 140%;
-    }
-
-    &__address {
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 21px;
-        line-height: 140%;
-    }
-}
-
-.footer {
-    background: linear-gradient(302.5deg, #090522 19.39%, #C9081F 80.25%), #430621;
-    max-width: 1920px;
-    margin: auto;
-    height: 600px;
-    margin-top: -400px;
-    
-    &__nav-item {
-            margin-left: 2.5vw;
-    
-            &:last-child {
-                margin-left: 5vw;
-                margin-right: 4vw;
-            }
-        }
-    
-}
 .footer-navbar {
     padding-top: 480px;
 }
@@ -227,4 +191,61 @@
 }
 .social-icon {
     margin-left: 4vw;
+}
+.paper-header-products {
+    margin-top: -25vw;
+    z-index: 556;
+    position: relative;
+
+    @media (max-width: 1380px) {
+        margin-top: -8vw;
+    }
+}
+
+.strawberry-img {
+    position: absolute;
+    top: 20%;
+    left: -3%;
+
+    @media (max-width: 1500px) {
+        display: none;
+    }
+}
+
+.leaf-img {
+    position: absolute;
+    top: 22%;
+    left: 75%;
+
+    @media (max-width: 1500px) {
+        display: none;
+    }
+
+}
+
+.leaf1-img {
+    position: absolute;
+    top: 68%;
+    left: 70%;
+    z-index: 777;
+
+    @media (max-width: 1500px) {
+        display: none;
+    }
+}
+
+.leaf2-img {
+    position: absolute;
+    top: 65%;
+    left: 42%;
+
+    @media (max-width: 1500px) {
+        display: none;
+    }
+}
+
+.container-wide-header {
+    background-color: transparent;
+    max-width: 1920px;
+    margin: auto;
 }
