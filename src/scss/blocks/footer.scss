@@ -9,9 +9,13 @@
       margin-left: 2.5vw;
 
       &:last-child {
-         margin-left: 5vw;
+         margin-left: 6vw;
          margin-right: 4vw;
       }
+   }
+
+   &__navbar {
+      padding-top: 480px;
    }
 
 }

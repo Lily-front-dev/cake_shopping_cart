@@ -8,10 +8,16 @@
       height: auto;
       border-radius: 20px;
       margin: 0px;
+      margin-top: 150px;
    }
 
    &__figure {
       position: relative;
+   }
+
+   &__pic {
+      position: absolute;
+      bottom: 0px;
    }
 
    &__img img {

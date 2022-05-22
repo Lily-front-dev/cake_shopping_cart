@@ -1,0 +1,19 @@
+.review {
+   padding: 20px 30px 40px 20px;
+
+   &__title {
+      font-family: 'Roboto';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 140%;
+      color: $text-color__black;
+   }
+
+   &__quote {
+      position: absolute;
+      left: 76.67%;
+      right: 5.56%;
+      top: -18%;
+   }
+}

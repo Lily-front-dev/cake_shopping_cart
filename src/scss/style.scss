@@ -1,27 +1,58 @@
 @import "libs/nullstyle";
 @import "fonts"; //!to add new font, please delete current file fonts.scss. New file will be generated!
 @import "variables";
+@import "libs/swiper-bundle";
+@import "libs/map";
+@import "libs/nav-pills";
 @import "blocks/header.scss";
 @import "blocks/button.scss";
 @import "blocks/contacts.scss";
 @import "libs/header-nav.scss";
 @import "blocks/block.scss";
+@import "blocks/about-us.scss";
+@import "blocks/products.scss";
+@import "blocks/reviews.scss";
+@import "blocks/review.scss";
+@import "blocks/order.scss";
 @import "blocks/order-item.scss";
-@import "libs/swiper-bundle";
-@import "libs/nav-pills";
 @import "mixins/box-shadow";
 @import "blocks/product";
 @import "mixins/play-btn";
 @import "mixins/gradient";
+@import "mixins/number-style";
+@import "mixins/box-text";
 @import "mixins/hover-scale";
 @import "libs/smartbasket";
 @import "blocks/footer.scss";
 
 .main-title {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
+        font-family: 'Appetite';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 73px;
+        line-height: 100%;
+        color: $text-color__white;
 
+        @media (max-width: 992px) {
+            font-size: 52px;
+            text-align: center;
+        }
+    }
+
+.main-text {
+     font-family: 'Roboto';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 16px;
+     line-height: 140%;
+     text-align: center;
+     color: #FFFFFF;
+
+     @media (max-width: 992px) {
+         font-size: 14px;
+     }
+
+ }
 .section-title {
     font-family: 'Appetite';
     font-style: normal;
@@ -35,21 +66,6 @@
     }
 }
 
- .main-text {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    color: #FFFFFF;
-
-    @media (max-width: 992px) {
-        font-size: 14px;
-    }
-
-}
-
 .section-subtitle {
     font-family: 'Roboto';
     font-style: normal;
@@ -60,138 +76,23 @@
     color: $text-color__grey;
 }
 
-.products {
-    padding: 0px 0px 60px 0px;
 
-    @media (max-width: 768px) {
-        padding: 0px 0px 30px 0px;
-    }
-}
-.products__subtitle, .about-us__subtitle {
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
 
 .mt-30 {
     margin-top: 30px;
 }
 
-.about-us {
-    padding: 20px 0px 75px 0px; 
-}
 
-
-.recipes-girl {
-    position: absolute;
-    bottom: 0px;
-}
-
-.recipes__bg {
-    background-image: url('@img/recipes/recipes_bg.png');
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 358px;
-}
-
-
-
-.order {
-    padding: 75px 0px 150px 0px;
-}
-.order-items {
-    padding-top: 40px; 
-}
-
-.number-style {
-    font-size: 18px;
-    font-weight: 700;
-    width: 40px;
-    height: 40px;
-    color: $text-color__white;
-    background-color: $color-red;
-    border: 4px solid #fff;
-    -webkit-box-shadow: 0 5px 13px 0 rgb(0 0 0 / 20%);
-    box-shadow: 0 5px 13px 0 rgb(0 0 0 / 20%);
-    border-radius: 50%;
-}
-.quote {
-    position: absolute;
-    left: 76.67%;
-    right: 5.56%;
-    top: -18%;
-}
-
-.review {
-    padding: 20px 30px 40px 20px;
-
-    &__title {
-            font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 28px;
-            line-height: 140%;
-            color: $text-color__black;
-        }
-}
-.reviews {
-    padding-top: 170px; 
-
-    &__subtitle {
-            margin-top: 10px;
-        }
-}
-.swiper-reviews {
-    padding-top: 100px; 
-    padding-bottom: 50px;
-}
-.box-text {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 140%;
-    color: $text-color__grey;
-}
-
-#map {
-    position: relative;
-    height: 570px;
-    width: 100%;
-    border-radius: 20px;
-    margin-top: 150px;
-}
-
-#marker {
-    background-image: url('@img/map/marker.svg');
-    background-size: cover;
-    width: 50px;
-    height: 66px;
-    cursor: pointer;
-    z-index: 0;
-}
-
-.mapboxgl-popup {
-    max-width: 200px;
-    border-radius: 10px;
-    padding: 10px;
-}
-
-
-
-
-.footer-navbar {
-    padding-top: 480px;
-}
 .fa {
     font-size: 28px !important;
     text-decoration: none;
     list-style-type: none;
-    margin-left: 40px;
+    margin-left: 2.5vw;
     color: white;
     line-height: 140%;
 
 }
-.social-icon {
-    margin-left: 4vw;
-}
+
 .paper-header-products {
     margin-top: -25vw;
     z-index: 556;
