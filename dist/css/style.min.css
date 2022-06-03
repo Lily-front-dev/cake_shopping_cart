@@ -895,6 +895,63 @@ button.swiper-pagination-bullet {
   }
 }
 
+.container-wide {
+  background-color: transparent;
+  max-width: 1920px;
+  margin: auto;
+}
+.container-wide__img-1 {
+  position: absolute;
+  top: 22%;
+  left: 75%;
+}
+@media (max-width: 1500px) {
+  .container-wide__img-1 {
+    display: none;
+  }
+}
+.container-wide__img-2 {
+  position: absolute;
+  top: 68%;
+  left: 70%;
+  z-index: 777;
+}
+@media (max-width: 1500px) {
+  .container-wide__img-2 {
+    display: none;
+  }
+}
+.container-wide__img-3 {
+  position: absolute;
+  top: 65%;
+  left: 42%;
+}
+@media (max-width: 1500px) {
+  .container-wide__img-3 {
+    display: none;
+  }
+}
+.container-wide__img-4 {
+  position: absolute;
+  top: 20%;
+  left: -3%;
+}
+@media (max-width: 1500px) {
+  .container-wide__img-4 {
+    display: none;
+  }
+}
+.container-wide__img-5 {
+  margin-top: -25vw;
+  z-index: 556;
+  position: relative;
+}
+@media (max-width: 1380px) {
+  .container-wide__img-5 {
+    margin-top: -8vw;
+  }
+}
+
 .button {
   background: linear-gradient(0deg, #EB2A41, #EB2A41), #FF4413;
   border-radius: 120px;
@@ -1177,27 +1234,6 @@ button.swiper-pagination-bullet {
   margin-top: -25px;
 }
 
-.box-shadow {
-  background: #FFFFFF;
-  border-radius: 20px;
-  box-shadow: 0px 5px 18px rgba(20, 37, 47, 0.1);
-  transform-style: preserve-3d;
-}
-
-.box-shadow:after {
-  content: "";
-  position: absolute;
-  width: 90%;
-  height: 40px;
-  left: 5%;
-  bottom: -10px;
-  transform: translateZ(-1px);
-  background: #FFF;
-  box-shadow: 0px 5px 30px rgba(20, 37, 47, 0.1);
-  border-radius: 10px;
-  z-index: 0;
-}
-
 .product {
   margin-bottom: 90px;
   margin-top: 30px;
@@ -1394,6 +1430,86 @@ button.swiper-pagination-bullet {
     box-shadow: none;
   }
 }
+.main-title {
+  font-family: "Appetite";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 73px;
+  line-height: 100%;
+  color: #FFFFFF;
+}
+@media (max-width: 992px) {
+  .main-title {
+    font-size: 52px;
+    text-align: center;
+  }
+}
+
+.main-text {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #FFFFFF;
+}
+@media (max-width: 992px) {
+  .main-text {
+    font-size: 14px;
+  }
+}
+
+.section-title {
+  font-family: "Appetite";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+  text-align: center;
+  color: #404040;
+}
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 36px;
+  }
+}
+
+.section-subtitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #AAAAAA;
+}
+
+.box-shadow {
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 5px 18px rgba(20, 37, 47, 0.1);
+  transform-style: preserve-3d;
+}
+
+.box-shadow:after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 40px;
+  left: 5%;
+  bottom: -10px;
+  transform: translateZ(-1px);
+  background: #FFF;
+  box-shadow: 0px 5px 30px rgba(20, 37, 47, 0.1);
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.mt-30 {
+  margin-top: 30px;
+}
+
 .gradient {
   display: inline-block;
   position: relative;
@@ -1431,6 +1547,15 @@ button.swiper-pagination-bullet {
   font-size: 14px;
   line-height: 140%;
   color: #AAAAAA;
+}
+
+.fa {
+  font-size: 28px !important;
+  text-decoration: none;
+  list-style-type: none;
+  margin-left: 2.5vw;
+  color: white;
+  line-height: 140%;
 }
 
 .hover-scale {
@@ -1717,7 +1842,6 @@ button.swiper-pagination-bullet {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  border: 1px solid #e2e2e2;
   background: 0 0;
   padding: 0;
   cursor: pointer;
@@ -1728,8 +1852,9 @@ button.swiper-pagination-bullet {
 
 .smart-basket__product-quantity-state {
   width: calc(100% - 60px);
-  border: 1px solid #e2e2e2;
   height: 30px;
+  border-left: 1px solid #FFFFFF;
+  border-right: 1px solid #FFFFFF;
   text-align: center;
   -webkit-appearance: none;
   -moz-appearance: textfield;
@@ -2585,134 +2710,4 @@ button.swiper-pagination-bullet {
 }
 .footer__navbar {
   padding-top: 480px;
-}
-
-.main-title {
-  font-family: "Appetite";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 73px;
-  line-height: 100%;
-  color: #FFFFFF;
-}
-@media (max-width: 992px) {
-  .main-title {
-    font-size: 52px;
-    text-align: center;
-  }
-}
-
-.main-text {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  text-align: center;
-  color: #FFFFFF;
-}
-@media (max-width: 992px) {
-  .main-text {
-    font-size: 14px;
-  }
-}
-
-.section-title {
-  font-family: "Appetite";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 100%;
-  text-align: center;
-  color: #404040;
-}
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 36px;
-  }
-}
-
-.section-subtitle {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 140%;
-  text-align: center;
-  color: #AAAAAA;
-}
-
-.mt-30 {
-  margin-top: 30px;
-}
-
-.fa {
-  font-size: 28px !important;
-  text-decoration: none;
-  list-style-type: none;
-  margin-left: 2.5vw;
-  color: white;
-  line-height: 140%;
-}
-
-.paper-header-products {
-  margin-top: -25vw;
-  z-index: 556;
-  position: relative;
-}
-@media (max-width: 1380px) {
-  .paper-header-products {
-    margin-top: -8vw;
-  }
-}
-
-.strawberry-img {
-  position: absolute;
-  top: 20%;
-  left: -3%;
-}
-@media (max-width: 1500px) {
-  .strawberry-img {
-    display: none;
-  }
-}
-
-.leaf-img {
-  position: absolute;
-  top: 22%;
-  left: 75%;
-}
-@media (max-width: 1500px) {
-  .leaf-img {
-    display: none;
-  }
-}
-
-.leaf1-img {
-  position: absolute;
-  top: 68%;
-  left: 70%;
-  z-index: 777;
-}
-@media (max-width: 1500px) {
-  .leaf1-img {
-    display: none;
-  }
-}
-
-.leaf2-img {
-  position: absolute;
-  top: 65%;
-  left: 42%;
-}
-@media (max-width: 1500px) {
-  .leaf2-img {
-    display: none;
-  }
-}
-
-.container-wide-header {
-  background-color: transparent;
-  max-width: 1920px;
-  margin: auto;
 }

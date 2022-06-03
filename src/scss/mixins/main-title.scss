@@ -1,0 +1,13 @@
+.main-title {
+   font-family: 'Appetite';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 73px;
+   line-height: 100%;
+   color: $text-color__white;
+
+   @media (max-width: 992px) {
+      font-size: 52px;
+      text-align: center;
+   }
+}

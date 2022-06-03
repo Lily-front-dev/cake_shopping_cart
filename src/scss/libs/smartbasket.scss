@@ -84,7 +84,7 @@
 }
 
 .smart-basket__product-item:first-child {
-   border-bottom: 1px dashed #d2d2d2
+   border-bottom: 1px dashed #d2d2d2;
 }
 
 @media (max-width:1030px) {
@@ -278,7 +278,6 @@
    -webkit-justify-content: center;
    -ms-flex-pack: center;
    justify-content: center;
-   border: 1px solid #e2e2e2;
    background: 0 0;
    padding: 0;
    cursor: pointer;
@@ -289,8 +288,9 @@
 
 .smart-basket__product-quantity-state {
    width: calc(100% - 60px);
-   border: 1px solid #e2e2e2;
    height: 30px;
+   border-left: 1px solid #FFFFFF;
+   border-right: 1px solid #FFFFFF;
    text-align: center;
    -webkit-appearance: none;
    -moz-appearance: textfield;

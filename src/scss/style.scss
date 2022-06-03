@@ -5,6 +5,7 @@
 @import "libs/map";
 @import "libs/nav-pills";
 @import "blocks/header.scss";
+@import "blocks/container-wide.scss";
 @import "blocks/button.scss";
 @import "blocks/contacts.scss";
 @import "libs/header-nav.scss";
@@ -15,138 +16,18 @@
 @import "blocks/review.scss";
 @import "blocks/order.scss";
 @import "blocks/order-item.scss";
-@import "mixins/box-shadow";
 @import "blocks/product";
 @import "mixins/play-btn";
+@import "mixins/main-title";
+@import "mixins/main-text";
+@import "mixins/section-title";
+@import "mixins/section-subtitle";
+@import "mixins/box-shadow";
+@import "mixins/mt-30";
 @import "mixins/gradient";
 @import "mixins/number-style";
 @import "mixins/box-text";
+@import "mixins/fa";
 @import "mixins/hover-scale";
 @import "libs/smartbasket";
 @import "blocks/footer.scss";
-
-.main-title {
-        font-family: 'Appetite';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 73px;
-        line-height: 100%;
-        color: $text-color__white;
-
-        @media (max-width: 992px) {
-            font-size: 52px;
-            text-align: center;
-        }
-    }
-
-.main-text {
-     font-family: 'Roboto';
-     font-style: normal;
-     font-weight: 400;
-     font-size: 16px;
-     line-height: 140%;
-     text-align: center;
-     color: #FFFFFF;
-
-     @media (max-width: 992px) {
-         font-size: 14px;
-     }
-
- }
-.section-title {
-    font-family: 'Appetite';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 100%;
-    text-align: center;
-    color: $text-color__black;
-    @media (max-width: 768px) {
-        font-size: 36px;
-    }
-}
-
-.section-subtitle {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 140%;
-    text-align: center;
-    color: $text-color__grey;
-}
-
-
-
-.mt-30 {
-    margin-top: 30px;
-}
-
-
-.fa {
-    font-size: 28px !important;
-    text-decoration: none;
-    list-style-type: none;
-    margin-left: 2.5vw;
-    color: white;
-    line-height: 140%;
-
-}
-
-.paper-header-products {
-    margin-top: -25vw;
-    z-index: 556;
-    position: relative;
-
-    @media (max-width: 1380px) {
-        margin-top: -8vw;
-    }
-}
-
-.strawberry-img {
-    position: absolute;
-    top: 20%;
-    left: -3%;
-
-    @media (max-width: 1500px) {
-        display: none;
-    }
-}
-
-.leaf-img {
-    position: absolute;
-    top: 22%;
-    left: 75%;
-
-    @media (max-width: 1500px) {
-        display: none;
-    }
-
-}
-
-.leaf1-img {
-    position: absolute;
-    top: 68%;
-    left: 70%;
-    z-index: 777;
-
-    @media (max-width: 1500px) {
-        display: none;
-    }
-}
-
-.leaf2-img {
-    position: absolute;
-    top: 65%;
-    left: 42%;
-
-    @media (max-width: 1500px) {
-        display: none;
-    }
-}
-
-.container-wide-header {
-    background-color: transparent;
-    max-width: 1920px;
-    margin: auto;
-}

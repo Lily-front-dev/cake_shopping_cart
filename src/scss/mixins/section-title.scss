@@ -1,0 +1,13 @@
+.section-title {
+   font-family: 'Appetite';
+   font-style: normal;
+   font-weight: 400;
+   font-size: 48px;
+   line-height: 100%;
+   text-align: center;
+   color: $text-color__black;
+
+   @media (max-width: 768px) {
+      font-size: 36px;
+   }
+}
