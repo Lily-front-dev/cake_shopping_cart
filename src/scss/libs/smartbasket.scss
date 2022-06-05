@@ -56,7 +56,18 @@
       padding: 10px
    }
 }
-
+.smart-basket__header {
+   height: 70px;
+}
+.smart-basket__title {
+   text-align: center;
+   font-size: 24px;
+   padding-top: 20px;
+}
+.smart-basket__header button{
+   float: right;
+   margin-right: 0px;
+}
 .smart-basket__form {
    width: 100%;
    max-width: 1000px;
@@ -235,7 +246,10 @@
       padding: 15px 0
    }
 }
-
+/*.smart-basket__product-kg:after {
+   content: "кг" !important;
+   color: red !important;
+}*/
 .smart-basket__product-quantity_header {
    -webkit-box-pack: center;
    -webkit-justify-content: center;
@@ -279,18 +293,24 @@
    -ms-flex-pack: center;
    justify-content: center;
    background: 0 0;
-   padding: 0;
+   padding: 0 5px 0 9px;
    cursor: pointer;
    -webkit-appearance: none;
    outline: 0;
    box-sizing: border-box
 }
-
+.smart-basket__add-item {
+   border-left: 1px solid #FFFFFF;
+   padding: 0 9px 0 5px;
+}
+.smart-basket__product-measure {
+   padding: 0 6px 0 0;
+}
 .smart-basket__product-quantity-state {
    width: calc(100% - 60px);
    height: 30px;
    border-left: 1px solid #FFFFFF;
-   border-right: 1px solid #FFFFFF;
+  
    text-align: center;
    -webkit-appearance: none;
    -moz-appearance: textfield;
