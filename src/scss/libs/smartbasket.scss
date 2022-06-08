@@ -648,8 +648,6 @@
    -webkit-box-sizing: border-box;
    box-sizing: border-box;
    height: 60px;
-   border: 1px solid #e2e2e2;
-   border-radius: 3px;
    outline: 0;
    -webkit-transition: .5s;
    -o-transition: .5s;
@@ -690,8 +688,6 @@
    align-items: center;
    cursor: pointer;
    text-align: left;
-   margin: 0 0 0 -15px;
-   padding: 0 15px 0 50px;
    height: 50px;
    border-radius: 2px
 }
@@ -699,19 +695,17 @@
 .smart-basket__label-agreement::after,
 .smart-basket__label-agreement::before {
    content: "";
-   position: absolute;
-   margin: 0;
-   outline: 0;
-   top: 50%;
-   left: 15px !important;
-   -webkit-transform: translate(0, -50%);
-   -ms-transform: translate(0, -50%);
-   transform: translate(0, -50%);
    -webkit-transition: all .3s ease;
    -o-transition: all .3s ease;
    transition: all .3s ease
 }
 
+label {
+   margin-bottom: 0px !important;
+}
+.smart-basket__footer .smart-basket__close-form {
+   display: none;
+}
 .smart-basket__link-agreement {
    text-decoration: none;
    display: -webkit-box;
@@ -738,30 +732,6 @@
    width: 20px;
    height: 20px;
    border-radius: 50%
-}
-
-.smart-basket__input-agreement:checked+.smart-basket__label-agreement:after {
-   -webkit-transform: translate(80%, -50%);
-   -ms-transform: translate(80%, -50%);
-   transform: translate(80%, -50%)
-}
-
-.smart-basket__label-agreement:before {
-   background-color: #aa5050
-}
-
-.smart-basket__label-agreement:after {
-   background-color: #e2e2e2;
-   -webkit-box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .14), 0 2px 2px 0 rgba(0, 0, 0, .098), 0 1px 5px 0 rgba(0, 0, 0, .084);
-   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .14), 0 2px 2px 0 rgba(0, 0, 0, .098), 0 1px 5px 0 rgba(0, 0, 0, .084)
-}
-
-.smart-basket__input-agreement:checked+.smart-basket__label-agreement:before {
-   background-color: #a5d6a7
-}
-
-.smart-basket__input-agreement:checked+.smart-basket__label-agreement:after {
-   background-color: #16a085
 }
 
 .smart-basket__result-common {
@@ -837,7 +807,7 @@
 }
 
 .smart-basket__footer {
-   width: 100%;
+   width: 50%;
    display: -webkit-box;
    display: -webkit-flex;
    display: -ms-flexbox;
@@ -846,10 +816,10 @@
    -webkit-align-items: center;
    -ms-flex-align: center;
    align-items: center;
-   -webkit-box-pack: end;
+   /*-webkit-box-pack: end;
    -webkit-justify-content: flex-end;
    -ms-flex-pack: end;
-   justify-content: flex-end;
+   justify-content: flex-end;*/
    padding: 0 15px
 }
 
@@ -871,7 +841,8 @@
    font-size: 16px;
    -webkit-appearance: none;
    cursor: pointer;
-   border-radius: 3px
+   border-radius: 3px;
+   width: 100%;
 }
 
 @media (max-width:768px) {
@@ -1188,4 +1159,86 @@
    100% {
       stroke-dashoffset: 900
    }
+}
+
+input[type="checkbox"] {
+   display: none;
+}
+
+.smart-basket__agreement-wrapper label,
+.form-group label {
+   color: #4E4E4E;
+   cursor: default;
+   font-weight: normal;
+   line-height: 20px;
+   padding: 10px 0;
+   vertical-align: middle;
+   font-size: 14px;
+}
+
+.smart-basket__agreement-wrapper label:before,
+.form-group label:before {
+   content: " ";
+   color: #000;
+   display: inline-block;
+   font: 20px FontAwesome;
+   margin-right: 15px;
+   position: relative;
+   text-align: center;
+   text-indent: 0px;
+   width: 20px;
+   height: 20px;
+   border-radius: 2px;
+   background: #1bbc9b;
+   border: 1px solid #1bbc9b;
+   border-image: initial;
+   vertical-align: middle;
+}
+
+.smart-basket__agreement-wrapper input:checked+label:before {
+   /* глифон - галочка */
+   content: "\f00c";
+}
+
+.form-group input:checked+label:before {
+   /* глифон - галочка */
+   content: "\f00c";
+}
+
+.smart-basket__agreement-wrapper input:disabled+label:before {
+   background: #eee;
+   color: #aaa;
+}
+
+.form-group input:disabled+label:before {
+   background: #eee;
+   color: #aaa;
+}
+
+.accept-rules a {
+   color: #FFA800 !important;
+   text-decoration: none;
+}
+
+.checkbox a {
+   color: #FFA800 !important;
+   text-decoration: none;
+}
+
+.form-group-button {
+   margin-top: 25px;
+}
+
+.btn-primary:hover {
+   background-color: black !important;
+   border-color: black !important;
+}
+
+.form-group input::placeholder {
+   font-family: Roboto;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 140%;
+   color: #4E4E4E;
 }
