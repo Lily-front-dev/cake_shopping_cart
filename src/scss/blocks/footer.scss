@@ -2,8 +2,13 @@
    background: linear-gradient(302.5deg, #090522 19.39%, #C9081F 80.25%), #430621;
    max-width: 1920px;
    margin: auto;
-   height: 600px;
+   height: 675px;
    margin-top: -400px;
+
+   &__img {
+      width: 100%;
+      margin-top: -5vw;
+   }
 
    &__nav-item {
       margin-left: 2.5vw;

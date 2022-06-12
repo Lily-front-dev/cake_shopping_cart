@@ -20,12 +20,15 @@
    }
    &__info {
       padding: 20px;
+      margin-bottom: 35px
    }
    &__buy {
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-top: 10px;
+      position: absolute;
+      bottom: 10px;
    }
    &__price {
       font-family: 'Roboto';

@@ -1,18 +1,17 @@
 <article>
    <div class="container">
-      <section class="products">
+      <section class="products" id="products">
          <h3 class="section-title products__title">Ням-нямки</h3>
          <h5 class="section-subtitle products__subtitle">Наши сладости приносят радость и
             эмоции на весь
             день!
             <br>Используем только качественные продукты.
          </h5>
-
          <!--......PRODUCT pills......-->
          <div class="row">
             <ul class="nav nav-pills col-md-12 justify-content-center align-items-center" id="myTab" role="tablist">
                <li class="nav-item">
-                  <button class="nav-link nav-link__empty">1</button>
+                  <button class="nav-link nav-link__empty d-none d-md-block">1</button>
                </li>
                <li class="nav-item" role="presentation">
                   <button class="nav-link active" id="cake-tab" data-toggle="tab" data-target="#cake" type="button"
@@ -35,7 +34,7 @@
                      role="tab" aria-controls="bakery" aria-selected="false">Выпечка</button>
                </li>
                <li class="nav-item">
-                  <button class="nav-link nav-link__empty">1</button>
+                  <button class="nav-link nav-link__empty d-none d-md-block">1</button>
                </li>
             </ul>
          </div>
@@ -47,7 +46,7 @@
                   <div class="swiper-wrapper">
 
                      <!--......PRODUCTS торты/Slide1......-->
-                     <div class="product swiper-slide">
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_1.png" class="img-fluid align-self-center" alt="product__img">
@@ -60,7 +59,7 @@
                               <div class="product__buy">
                                  <div class="product__prices">
                                     <div class="product__price">375 грн <span>/кг</span></div>
-                                    <div class="product__price-old d-none">2900 грн</div>
+                                    <div class="product__price-old d-none"></div>
                                  </div>
                                  <div class="product__quantity"></div>
                                  <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="001"
@@ -73,24 +72,23 @@
                         </div>
                      </div>
                      <!--......PRODUCTS торты/Slide2......-->
-                     <div class="product swiper-slide">
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_2.png" class="img-fluid align-self-center" alt="product__img">
                            </div>
                            <div class="product__info">
-                              <h4 class="product__title">«Наполеон» с ягодой</h4>
-                              <div class="product__desc">Готовим из слоеного теста с ванильно-сливочным
-                                 заварным кремом
-                                 с мороженым пломбир и украшаем свежей ягодой.</div>
+                              <h4 class="product__title">«Киевский»</h4>
+                              <div class="product__desc">Мы готовим из воздушного безе на обжаренном фундуке с
+                                 ванильно-сливочным и шоколадным кремом.</div>
                               <div class="product__buy">
                                  <div class="product__prices">
-                                    <div class="product__price">375 грн <span>/кг</span></div>
-                                    <div class="product__price-old d-none">2900 грн</div>
+                                    <div class="product__price">418 грн <span>/кг</span></div>
+                                    <div class="product__price-old d-none"></div>
                                  </div>
                                  <div class="product__quantity"></div>
                                  <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="002"
-                                    data-sb-product-name="Наполеон» с ягодой" data-sb-product-price="245"
+                                    data-sb-product-name="«Киевский»" data-sb-product-price="418"
                                     data-sb-product-quantity="1" data-sb-product-img="@img/menu/item_1_2.png">
                                     <img src="@img/menu/buy.svg" alt="">
                                  </button>
@@ -99,24 +97,24 @@
                         </div>
                      </div>
                      <!--......PRODUCTS торты/Slide3......-->
-                     <div class="product swiper-slide">
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_3.png" class="img-fluid align-self-center" alt="product__img">
                            </div>
                            <div class="product__info">
-                              <h4 class="product__title">«Наполеон» с ягодой</h4>
-                              <div class="product__desc">Готовим из слоеного теста с ванильно-сливочным
-                                 заварным кремом
-                                 с мороженым пломбир и украшаем свежей ягодой.</div>
+                              <h4 class="product__title">«Прага»</h4>
+                              <div class="product__desc">Мы готовим из шоколадного мусса с пряным миндальным штрейзелем
+                                 на миндально шоколадном бисквите, поливаем шоколадной
+                                 глазурью и кладем трубочки.</div>
                               <div class="product__buy">
                                  <div class="product__prices">
-                                    <div class="product__price">375 грн <span>/кг</span></div>
-                                    <div class="product__price-old d-none">2900 грн</div>
+                                    <div class="product__price">256 грн <span>/кг</span></div>
+                                    <div class="product__price-old d-none"></div>
                                  </div>
                                  <div class="product__quantity"></div>
                                  <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="003"
-                                    data-sb-product-name="Наполеон» с ягодой" data-sb-product-price="245"
+                                    data-sb-product-name="«Прага»" data-sb-product-price="256"
                                     data-sb-product-quantity="1" data-sb-product-img="@img/menu/item_1_3.png">
                                     <img src="@img/menu/buy.svg" alt="">
                                  </button>
@@ -125,25 +123,24 @@
                         </div>
                      </div>
                      <!--......PRODUCTS торты/Slide4......-->
-                     <div class="product swiper-slide">
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_4.png" class="img-fluid align-self-center" alt="product__img">
                            </div>
                            <div class="product__info">
-                              <h4 class="product__title">«Наполеон» с ягодой</h4>
-                              <div class="product__desc">Готовим из слоеного теста с ванильно-сливочным
-                                 заварным кремом
-                                 с мороженым пломбир и украшаем свежей ягодой.</div>
+                              <h4 class="product__title">«Наполеон» классический</h4>
+                              <div class="product__desc">Мы готовим из слоеного теста с ванильно-сливочным заварным
+                                 кремом, с мороженым пломбир.</div>
                               <div class="product__buy">
                                  <div class="product__prices">
-                                    <div class="product__price">375 грн <span>/кг</span></div>
-                                    <div class="product__price-old d-none">2900 грн</div>
+                                    <div class="product__price">325 грн <span>/кг</span></div>
+                                    <div class="product__price-old d-none"></div>
                                  </div>
                                  <div class="product__quantity"></div>
                                  <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="004"
-                                    data-sb-product-name="Наполеон с ягодой" data-sb-product-price="375"
-                                    data-sb-product-quantity="1" data-sb-product-img="@img/menu/item_1_3.png">
+                                    data-sb-product-name="«Наполеон» классический" data-sb-product-price="325"
+                                    data-sb-product-quantity="1" data-sb-product-img="@img/menu/item_1_4.png">
                                     <img src="@img/menu/buy.svg" alt="">
                                  </button>
                               </div>
@@ -151,26 +148,24 @@
                         </div>
                      </div>
                      <!--......PRODUCTS торты/Slide5......-->
-                     <div class="product swiper-slide">
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
-                              <img src="@img/menu/item_1_1.png" class="img-fluid align-self-center" alt="product__img">
+                              <img src="@img/menu/item_1_5.png" class="img-fluid align-self-center" alt="product__img">
                            </div>
                            <div class="product__info">
-                              <h4 class="product__title">«Наполеон» с ягодой</h4>
-                              <div class="product__desc">Готовим из слоеного теста с ванильно-сливочным
-                                 заварным кремом
-                                 с мороженым пломбир и украшаем свежей ягодой.</div>
+                              <h4 class="product__title">«Птичье молоко»</h4>
+                              <div class="product__desc">Мы готовим из ванильно-сливочного мусса на миндальном бисквите
+                                 и украшаем стружкой молочного шоколада и маршмелоу.</div>
                               <div class="product__buy">
                                  <div class="product__prices">
-                                    <div class="product__price">375 грн <span>/кг</span></div>
-                                    <div class="product__price-old d-none">2900 грн</div>
+                                    <div class="product__price">195 грн <span>/кг</span></div>
+                                    <div class="product__price-old d-none"></div>
                                  </div>
                                  <div class="product__quantity"></div>
-                                 <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="002"
-                                    data-sb-product-name="Афганский Казан Комбинированный 5 л"
-                                    data-sb-product-price="245" data-sb-product-quantity="1"
-                                    data-sb-product-img="http://jess.com.ua/img/menu/2_png.png">
+                                 <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="005"
+                                    data-sb-product-name="«Птичье молоко»" data-sb-product-price="195"
+                                    data-sb-product-quantity="1" data-sb-product-img="@img/menu/item_1_5.png">
                                     <img src="@img/menu/buy.svg" alt="">
                                  </button>
                               </div>
@@ -178,26 +173,25 @@
                         </div>
                      </div>
                      <!--......PRODUCTS торты/Slide6......-->
-                     <div class="product swiper-slide">
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
-                              <img src="@img/menu/item_1_1.png" class="img-fluid align-self-center" alt="product__img">
+                              <img src="@img/menu/item_1_6.png" class="img-fluid align-self-center" alt="product__img">
                            </div>
                            <div class="product__info">
-                              <h4 class="product__title">«Наполеон» с ягодой</h4>
+                              <h4 class="product__title">«Киевский» с ягодами</h4>
                               <div class="product__desc">Готовим из слоеного теста с ванильно-сливочным
                                  заварным кремом
                                  с мороженым пломбир и украшаем свежей ягодой.</div>
                               <div class="product__buy">
                                  <div class="product__prices">
-                                    <div class="product__price">375 грн <span>/кг</span></div>
-                                    <div class="product__price-old d-none">2900 грн</div>
+                                    <div class="product__price">575 грн <span>/кг</span></div>
+                                    <div class="product__price-old d-none"></div>
                                  </div>
                                  <div class="product__quantity"></div>
-                                 <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="002"
-                                    data-sb-product-name="Афганский Казан Комбинированный 5 л"
-                                    data-sb-product-price="245" data-sb-product-quantity="1"
-                                    data-sb-product-img="http://jess.com.ua/img/menu/2_png.png">
+                                 <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="006"
+                                    data-sb-product-name="«Киевский» с ягодами" data-sb-product-price="575"
+                                    data-sb-product-quantity="1" data-sb-product-img="@img/menu/item_1_6.png">
                                     <img src="@img/menu/buy.svg" alt="">
                                  </button>
                               </div>
@@ -205,26 +199,25 @@
                         </div>
                      </div>
                      <!--......PRODUCTS торты/Slide7......-->
-                     <div class="product swiper-slide">
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
-                              <img src="@img/menu/item_1_1.png" class="img-fluid align-self-center" alt="product__img">
+                              <img src="@img/menu/item_1_7.png" class="img-fluid align-self-center" alt="product__img">
                            </div>
                            <div class="product__info">
-                              <h4 class="product__title">«Наполеон» с ягодой</h4>
-                              <div class="product__desc">Готовим из слоеного теста с ванильно-сливочным
-                                 заварным кремом
-                                 с мороженым пломбир и украшаем свежей ягодой.</div>
+                              <h4 class="product__title">«Сникерс»</h4>
+                              <div class="product__desc">Мы готовим из ванильного мусса с мягкой карамелью и хрустящей
+                                 шоколадно- ореховой прослойкой на миндально шоколадном
+                                 бисквите.</div>
                               <div class="product__buy">
                                  <div class="product__prices">
-                                    <div class="product__price">375 грн <span>/кг</span></div>
-                                    <div class="product__price-old d-none">2900 грн</div>
+                                    <div class="product__price">632 грн <span>/кг</span></div>
+                                    <div class="product__price-old d-none"></div>
                                  </div>
                                  <div class="product__quantity"></div>
-                                 <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="002"
-                                    data-sb-product-name="Афганский Казан Комбинированный 5 л"
-                                    data-sb-product-price="245" data-sb-product-quantity="1"
-                                    data-sb-product-img="http://jess.com.ua/img/menu/2_png.png">
+                                 <button class="product__add-to-cart-button" data-sb-id-or-vendor-code="007"
+                                    data-sb-product-name="«Сникерс»" data-sb-product-price="245"
+                                    data-sb-product-quantity="1" data-sb-product-img="@img/menu/item_1_7.png">
                                     <img src="@img/menu/buy.svg" alt="">
                                  </button>
                               </div>
@@ -240,13 +233,13 @@
             </div>
 
 
-            <!--......PRODUCTS Полированные......-->
+            <!--......PRODUCTS Десерты......-->
             <div class="tab-pane fade" id="desserts" role="tabpanel" aria-labelledby="desserts-tab">
                <div class="swiper-products">
                   <div class="swiper-wrapper">
 
-                     <!--......PRODUCTS торты/Slide1......-->
-                     <div class="product swiper-slide">
+                     <!--......PRODUCTS Десерты/Slide1......-->
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_1.png" class="img-fluid align-self-center" alt="product__img">
@@ -272,8 +265,8 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS торты/Slide2......-->
-                     <div class="product swiper-slide">
+                     <!--......PRODUCTS Десерты/Slide2......-->
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_2.png" class="img-fluid align-self-center" alt="product__img">
@@ -299,8 +292,8 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS торты/Slide3......-->
-                     <div class="product swiper-slide">
+                     <!--......PRODUCTS Десерты/Slide3......-->
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_3.png" class="img-fluid align-self-center" alt="product__img">
@@ -326,8 +319,8 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS торты/Slide4......-->
-                     <div class="product swiper-slide">
+                     <!--......PRODUCTS Десерты/Slide4......-->
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_4.png" class="img-fluid align-self-center" alt="product__img">
@@ -353,8 +346,8 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS торты/Slide5......-->
-                     <div class="product swiper-slide">
+                     <!--......PRODUCTS Десерты/Slide5......-->
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_1.png" class="img-fluid align-self-center" alt="product__img">
@@ -380,8 +373,8 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS торты/Slide6......-->
-                     <div class="product swiper-slide">
+                     <!--......PRODUCTS Десерты/Slide6......-->
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_1.png" class="img-fluid align-self-center" alt="product__img">
@@ -407,8 +400,8 @@
                            </div>
                         </div>
                      </div>
-                     <!--......PRODUCTS торты/Slide7......-->
-                     <div class="product swiper-slide">
+                     <!--......PRODUCTS Десерты/Slide7......-->
+                     <div class="product swiper-slide d-flex align-items-stretch">
                         <div class="product__element box-shadow">
                            <div class="product__img d-flex justify-content-center">
                               <img src="@img/menu/item_1_1.png" class="img-fluid align-self-center" alt="product__img">
@@ -435,7 +428,7 @@
                         </div>
                      </div>
                   </div>
-                  <!-- Add Pagination to PRODUCTS торты -->
+                  <!-- Add Pagination to PRODUCTS Десерты -->
                   <div class="swiper-button-next"></div>
                   <div class="swiper-button-prev"></div>
                   <div class="swiper-pagination"></div>
@@ -443,7 +436,7 @@
             </div>
          </div>
       </section>
-      <section class="about-us">
+      <section class="about-us" id="about-us">
          <h3 class="section-title about-us__title">Интересно про нас</h3>
          <h5 class="section-subtitle about-us__subtitle">Наши сладости приносят радость и эмоции на весь
             день!<br>
@@ -503,12 +496,12 @@
 
 
       </section>
-      <section class="order">
+      <section class="order" id="order">
          <h3 class="order__title section-title">Заказать легко</h3>
          <h5 class="order__subtitle section-subtitle">Наши сладости приносят радость и эмоции на весь
             день!<br>Используем только качественные продукты.</h5>
-         <div class="row">
-            <div class="col-6 col-lg-3 mt-30">
+         <div class="row justify-content-center">
+            <div class="col-10 col-md-6 col-lg-3 mt-30 d-flex align-items-stretch">
                <div class="order-item box-shadow">
                   <div class="order-item__bg d-flex justify-content-center">
                      <div class="order-item__number number-style">1</div>
@@ -518,7 +511,7 @@
                   <div class="order-item__info box-text">Оформите заказ на сайте или позвоните нам</div>
                </div>
             </div>
-            <div class="col-6 col-lg-3 mt-30">
+            <div class="col-10 col-md-6 col-lg-3 mt-30 d-flex align-items-stretch">
                <div class="order-item box-shadow">
                   <div class="order-item__bg d-flex justify-content-center">
                      <div class="order-item__number number-style">2</div>
@@ -528,7 +521,7 @@
                   <div class="order-item__info box-text">Оплатите онлайн через сайт или курьеру наличными</div>
                </div>
             </div>
-            <div class="col-6 col-lg-3 mt-30">
+            <div class="col-10 col-md-6 col-lg-3 mt-30 d-flex align-items-stretch">
                <div class="order-item box-shadow">
                   <div class="order-item__bg d-flex justify-content-center">
                      <div class="order-item__number number-style">3</div>
@@ -538,7 +531,7 @@
                   <div class="order-item__info box-text">Вжуу-уух и мы уже у вас под подьездом</div>
                </div>
             </div>
-            <div class="col-6 col-lg-3 mt-30">
+            <div class="col-10 col-md-6 col-lg-3 mt-30 d-flex align-items-stretch">
                <div class="order-item box-shadow">
                   <div class="order-item__bg d-flex justify-content-center">
                      <div class="order-item__number number-style">4</div>
@@ -551,7 +544,7 @@
 
          </div>
       </section>
-      <section class="video">
+      <section class="video" id="video">
          <div class="row block_large justify-content-center">
             <div class="col-lg-5 col-5">
                <div class="block__content_large">
@@ -592,11 +585,11 @@
                      <a class="play-btn" href="#"></a>
                   </div>
                   <div class="block__content block__content_center">
-                     <div class="main-text">Рецепт тортика номер 1</div>
+                     <div class="main-text">Рецепт тортика номер 2</div>
                   </div>
                </div>
             </div>
-            <div class="col-md-4 col-6">
+            <div class="col-md-4 col-6 d-none d-md-block">
                <div class="block mt-30">
                   <div class="block__img">
                      <img src="@img/recipes/recipe_1.png" class="img-fluid">
@@ -605,7 +598,7 @@
                      <a class="play-btn" href="#"></a>
                   </div>
                   <div class="block__content block__content_center">
-                     <div class="main-text">Рецепт тортика номер 1</div>
+                     <div class="main-text">Рецепт тортика номер 3</div>
                   </div>
                </div>
             </div>

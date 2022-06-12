@@ -1,5 +1,8 @@
 .reviews {
    padding-top: 170px;
+   @media (max-width: 768px) {
+      padding-top: 80px;
+   }
 
    &__subtitle {
       margin-top: 10px;
@@ -8,5 +11,9 @@
    &__items {
       padding-top: 100px;
       padding-bottom: 50px;
+
+      @media (max-width: 568px) {
+         padding-top: 35px;
+      }
    }
 }
