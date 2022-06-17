@@ -56,8 +56,8 @@ var swiper = new Swiper('.swiper-reviews', {
          spaceBetween: 5,
       },
       768: {
-         slidesPerView: 2,
-         spaceBetween: 30,
+         slidesPerView: 1,
+         spaceBetween: 60,
       },
       576: {
          slidesPerView: 1,

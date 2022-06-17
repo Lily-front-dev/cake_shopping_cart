@@ -846,6 +846,10 @@ button.swiper-pagination-bullet {
   }
 }
 
+.nav-link:hover {
+  cursor: pointer;
+}
+
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   background-color: transparent;
@@ -1350,6 +1354,7 @@ button.swiper-pagination-bullet {
 }
 .product__img img {
   width: 100%;
+  border-radius: 20px 20px 0px 0px;
 }
 
 .block-video {
