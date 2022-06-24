@@ -11,11 +11,12 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <!-- Map -->
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css' rel='stylesheet' />
-
     <!-- Fonts -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/style.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/0.1.12/wow.min.js"></script>
+    <script>new WOW().init();</script>
 
     <title>Про нас</title>
 </head>
@@ -58,13 +59,15 @@
         </nav>
         <div class="row">
             <div class="col-lg-5 col-xs-12">
-                <div class="header__titles">
+                <div class="header__titles wow fadeInLeft">
                     <h5 class="main-text header__subtitle text-lg-left">Пекарня ручной работы</h5>
                     <h1 class="main-title header__title">Вкуснейшие тортuки</h1>
-                    <h5 class="main-text header__subtitle text-lg-left">Наши тортики ручной работы приносят радость
+                    <h5 class="main-text header__subtitle text-lg-left">Наши тортики ручной работы
+                        приносят радость
                         и улыбки в каждый дом, при любых ситуациях!</h5>
                 </div>
-                <a class="button main-text button_theme_header" href="#">Побаловать себя</a>
+                <a href="#products" class="button main-text button_theme_header wow fadeInUp"
+                    data-wow-delay="1s">Побаловать себя</a>
             </div>
             <div class="header__img col-lg-7 col-xs-12">
                 <img src="img/header/img_cake.png" alt="img">

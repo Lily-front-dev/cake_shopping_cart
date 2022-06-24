@@ -6,6 +6,13 @@
 
 .button_theme_header {
    padding: 25px 60px;
+   z-index: 789;
+   position: relative;
+
+   &:hover {
+      color: white;
+      background: #FF4413;
+   }
 
    @media (max-width: 992px) {
       display: flex;
