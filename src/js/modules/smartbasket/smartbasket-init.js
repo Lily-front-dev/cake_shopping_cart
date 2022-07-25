@@ -8,7 +8,6 @@ $(function () {
       smartBasketMinArea: 'header__basket-min',
       countryCode: '+38',
       smartBasketCurrency: 'грн',
-      smartBasketMinIconPath: './img/header/shopping-basket-wight.svg',
 
       agreement: {
          isRequired: true,
