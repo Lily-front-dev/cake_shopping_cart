@@ -945,6 +945,17 @@ body {
   background: red;
 }
 
+.contact-form__file {
+  display: none;
+}
+
+.smart-form__img {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+
 @media (max-width: 480px) {
   .form-wrapper {
     padding: 15px;
