@@ -4,6 +4,9 @@ import * as smartbasket_main from "./modules/smartbasket/smartbasket.min.js";
 import * as smartbasket_alert from "./modules/smartbasket/smartbasket-alert.js";
 import * as smartbasket_init from "./modules/smartbasket/smartbasket-init.js";
 
+/*Smart contact form*/
+import * as smartform from "./modules/smartform/mail.js";
+
 /*Swiper*/
 import * as flsFunctions from "./modules/functions.js";
 import * as swiper from "./modules/swiper/swiper-bundle.js";
