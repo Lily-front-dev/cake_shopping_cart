@@ -6,6 +6,7 @@ import * as smartbasket_init from "./modules/smartbasket/smartbasket-init.js";
 
 /*Smart contact form*/
 import * as smartform from "./modules/smartform/mail.js";
+import * as tel_mask from "./modules/smartform/tel-mask.js";
 
 /*Swiper*/
 import * as flsFunctions from "./modules/functions.js";

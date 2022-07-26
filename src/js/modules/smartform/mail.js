@@ -25,7 +25,7 @@
 			success: function success(res) {
 				console.log(res);
 				let respond = $.parseJSON(res);
-				
+
 				if (respond.name) {
 					inpNameError.text(respond.name);
 				} else {
@@ -45,17 +45,17 @@
 				}
 
 				if (respond.company) {
- inpCompanyError.text(respond.company);
-} else {
- inpCompanyError.text('');
-}
+					inpCompanyError.text(respond.company);
+				} else {
+					inpCompanyError.text('');
+				}
 
 				if (respond.text) {
 					inpTextError.text(respond.text);
 				} else {
 					inpTextError.text('');
 				}
-				
+
 				if (respond.file) {
 					inpFileError.text(respond.file);
 				} else {
@@ -75,8 +75,8 @@
 				}
 
 				if (respond.success) {
-  window.location.replace("/thank-you-page.php?status=success"); 
-}
+					window.location.replace("/files/smart_form/thank-you-page.php?status=success");
+				}
 			},
 		});
 	});

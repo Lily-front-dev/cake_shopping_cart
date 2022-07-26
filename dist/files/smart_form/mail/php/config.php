@@ -50,7 +50,7 @@
 	const CATCHER = 'brezdinatest@gmail.com';
 	
 	// Тема письма
-	const SUBJECT = 'Заявка с сайта';
+	const SUBJECT = 'Заявка на звонок с Cakes';
 	
 	// Кодировка
   const CHARSET = 'UTF-8';
