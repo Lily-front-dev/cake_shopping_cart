@@ -1,0 +1,18 @@
+.floating {
+	animation-name: floating;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	   &_5s {
+         animation-duration: 5s;
+   }
+       &_6s {
+          animation-duration: 6s;
+       }
+}
+
+@keyframes floating {
+	0% { transform: translate(0, 0px); }
+	50% { transform: translate(0, 15px); }
+	100% { transform: translate(0, -0px); }
+}

@@ -3,7 +3,10 @@
 @import "variables";
 @import "libs/swiper-bundle";
 @import "libs/map";
+@import "libs/mapbox";
+/*@import "libs/modal";*/
 @import "libs/form";
+@import "libs/floating";
 @import "libs/nav-pills";
 @import "blocks/header.scss";
 @import "blocks/container-wide.scss";
@@ -13,6 +16,7 @@
 @import "blocks/block.scss";
 @import "blocks/about-us.scss";
 @import "blocks/products.scss";
+
 @import "blocks/reviews.scss";
 @import "blocks/review.scss";
 @import "blocks/order.scss";

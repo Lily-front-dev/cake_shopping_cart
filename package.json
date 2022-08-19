@@ -15,6 +15,7 @@
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "latest",
+    "css-loader": "^6.7.1",
     "del": "latest",
     "gulp": "latest",
     "gulp-autoprefixer": "latest",
@@ -47,6 +48,7 @@
   },
   "dependencies": {
     "jquery": "^3.6.0",
+    "mapbox-gl": "^2.9.2",
     "wow.js": "^1.2.2",
     "wowjs": "^1.1.3"
   }

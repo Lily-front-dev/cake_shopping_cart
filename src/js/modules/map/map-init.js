@@ -1,4 +1,5 @@
 
+import mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
 mapboxgl.accessToken = 'pk.eyJ1IjoibGlsaWEta3VrIiwiYSI6ImNrb3UwZXpmdjBieHoyb21xMGs0azB1YWgifQ.hHoJVbDYP7HRGcklMRdQow';
 var monument = [30.47, 50.48];
 var map = new mapboxgl.Map({
