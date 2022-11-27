@@ -1,9 +1,29 @@
-.fa {
+/*.fa-facebook-f:before,
+.fa.fa-facebook:before {
+   content: "\f09a" !important;
+}
+
+.fa.fa-facebook {
+   display: inline-block;
+   font: normal normal normal 14px/1 FontAwesome !important;
+   font-size: inherit !important;
+   text-rendering: auto !important;
+   -webkit-font-smoothing: antialiased !important;
+   -moz-osx-font-smoothing: grayscale !important;
+   font-family: fontawesome !important;
+}
+.fa.fa-facebook{
    font-size: 28px !important;
-   text-decoration: none;
-   list-style-type: none;
+   text-decoration: none !important;
+   list-style-type: none !important;
    margin-left: 2.5vw;
    color: white;
    line-height: 140%;
 
+}*/
+.fa.fa-vk {
+   margin-left: 2.5vw;
+}
+.social img {
+   margin-left: 2.5vw;
 }

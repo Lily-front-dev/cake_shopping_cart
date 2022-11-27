@@ -299,6 +299,7 @@
    outline: 0;
    box-sizing: border-box;
    color: black;
+   border: none;
 }
 .smart-basket__add-item {
    border-left: 1px solid #FFFFFF;
@@ -310,6 +311,7 @@
 .smart-basket__product-quantity-state {
    width: calc(100% - 60px);
    height: 30px;
+   border: none;
    border-left: 1px solid #FFFFFF;
   
    text-align: center;
@@ -1188,7 +1190,7 @@ label {
    content: " ";
    color: #000;
    display: inline-block;
-   font: 20px FontAwesome;
+   /*font: 20px FontAwesome;*/
    margin-right: 15px;
    position: relative;
    text-align: center;
@@ -1204,12 +1206,12 @@ label {
 
 .smart-basket__agreement-wrapper input:checked+label:before {
    /* глифон - галочка */
-   content: "\f00c";
+   content: "\2714";
 }
 
 .form-group input:checked+label:before {
    /* глифон - галочка */
-   content: "\f00c";
+   content: "\2714";
 }
 
 .smart-basket__agreement-wrapper input:disabled+label:before {

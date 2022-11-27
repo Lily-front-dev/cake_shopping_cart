@@ -4,16 +4,9 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css?_v=20220819170536"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <!-- Map 
-    <link href='https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css?_v=20220819170536' rel='stylesheet'
-        media="screen and (min-width:400px)" />//added as npm-->
-    <!-- Fonts -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css?_v=20220819170536" rel="stylesheet">
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.min.css?_v=20220819170536">
+    <link rel="stylesheet" href="css/style.min.css?_v=20220830181448">
 
 
 
@@ -70,8 +63,11 @@
                 <a href="#products" class="button main-text button_theme_header wow fadeInUp"
                     data-wow-delay="1s">Побаловать себя</a>
             </div>
-            <div class="header__img col-lg-7 col-xs-12">
+            <div class="header__img col-lg-7 col-md-12 d-none d-md-block">
                 <picture><source srcset="img/header/img_cake.webp" type="image/webp"><img src="img/header/img_cake.png" alt="img"></picture>
+            </div>
+            <div class="header__img col-xs-12 d-block d-md-none">
+                <picture><source srcset="img/header/img_cake_768.webp" type="image/webp"><img src="img/header/img_cake_768.png" alt="img"></picture>
             </div>
         </div>
     </div>
@@ -115,24 +111,24 @@
                <li class="nav-item footer__nav-item align-self-center">
                   <a class="nav-link" href="#reviews">Отзывы</a>
                </li>
-               <li class="nav-item footer__nav-item">
+               <li class="nav-item footer__nav-item align-self-center">
                   <a href="#" target="_blank">
-                     <i class="fa fa-facebook" aria-hidden="true"></i>
+                     <img src="img/footer/twitter_icon.svg" class="social fa fa-vk" alt="twitter_icon">
                   </a>
                </li>
                <li class="nav-item align-self-center">
                   <a href="#" target="_blank">
-                     <i class="fa fa-vk" aria-hidden="true"></i>
+                     <img src="img/footer/fb_icon.svg" class="fa fa-vk" alt="fb_icon">
                   </a>
                </li>
                <li class="nav-item align-self-center">
                   <a href="#" target="_blank">
-                     <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                     <img src="img/footer/youtube_icon.svg" class="fa fa-vk" alt="youtube_icon">
                   </a>
                </li>
                <li class="nav-item align-self-center">
                   <a href="#" target="_blank">
-                     <i class="fa fa-twitter" aria-hidden="true"></i>
+                     <img src="img/footer/vk_icon.svg" class="fa fa-vk" alt="vk_icon">
                   </a>
                </li>
             </ul>

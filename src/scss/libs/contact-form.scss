@@ -13,7 +13,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(251, 251, 251, 0.2);
     padding: 30px;
     border-radius: 5px;
 }
@@ -26,6 +25,8 @@ body {
     padding: 0 30px 30px;
     box-shadow: 0 3px 35px rgba(0, 0, 0, .1);
     border-radius: 20px;
+    position: relative;
+    z-index: 999;
 }
 
 .contact-form__title {
@@ -93,9 +94,11 @@ body {
 
 .contact-form__checkbox-label a {
     text-decoration: none;
-
+    color: #EB2A41;
 }
-
+.contact-form__checkbox-label a:hover {
+    color: rgb(103, 5, 5);
+}
 .contact-form__file {
     padding: 12px 15px;
 }
@@ -127,7 +130,7 @@ body {
 
 .contact-form__button:hover {
     transition: .3s;
-    background: red;
+    background: #ff485e;
 }
 .contact-form__file {
     display: none;
@@ -214,3 +217,4 @@ height: 100%;
     transition: .3s;
     background: #2eb7ab;
 }
+
