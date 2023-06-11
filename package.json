@@ -47,7 +47,7 @@
     "webpack-stream": "latest"
   },
   "dependencies": {
-    "bootstrap": "^4.6.1",
+    "bootstrap": "^4.6.0",
     "jquery": "^3.6.0",
     "mapbox-gl": "^2.9.2",
     "wow.js": "^1.2.2",
